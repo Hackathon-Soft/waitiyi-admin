@@ -1,0 +1,504 @@
+<html lang="en">
+
+  <head>
+    @@include('./_head.html', {
+    "path": ".",
+    "title": "Waitiyi - Call History"
+    })
+  </head>
+
+  <body>
+    <header class="main-header w-100">
+      @@include('./_nav.html', {
+      "path": "."
+      })
+
+      @@include('./_navigation.html', {
+      "path": ".",
+      "classes": ""
+      })
+    </header>
+
+    <main class="content pt-2">
+      <section>
+        <div class="container-fluid section-x-margins">
+          <div class="row align-items-start justify-content-between">
+            <div class="col-sm-24 col-md-15 col-lg-15">
+              <div class="my-4">
+                <h2 class="title-1 mb-4">Call History</h2>
+
+                <div class="input-group search-bar mb-3">
+                  <span class="input-group-text pe-0" id="basic-addon1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7_1348)">
+                        <path
+                          d="M8.75 16.25C12.8921 16.25 16.25 12.8921 16.25 8.75C16.25 4.60786 12.8921 1.25 8.75 1.25C4.60786 1.25 1.25 4.60786 1.25 8.75C1.25 12.8921 4.60786 16.25 8.75 16.25Z"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.375 14.375L18.75 18.75" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_7_1348">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                    aria-describedby=" " />
+                </div>
+                <div class="border-0 table-wrapper table-responsive">
+                  <table class="call-history table table-hover">
+                    <thead>
+                      <tr>
+                        <th class="call-status">
+                          <svg class="outgoing" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Outgoing Call
+                          </span>
+                        </th>
+                        <th>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-1.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Ayoub
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </th>
+                        <th>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </th>
+                        <th>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </th>
+                        <th>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2"> - </div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Item -->
+                      <tr>
+                        <td class="call-status">
+                          <svg class="outgoing" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Outgoing Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-1.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Ayoub
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$34.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="incoming" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Incoming Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-2.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Khan
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$333.34</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="missed" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Missed Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-3.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Shahzad
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">04 December</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">03:15</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2"> - </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="outgoing" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Outgoing Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-4.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Thressa Web
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 June</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$456.68</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="incoming" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Incoming Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-4.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Mitchell
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">08 January</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$443.66</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="outgoing" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Outgoing Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-5.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Leslie
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">19 March</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$56.68</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="incoming" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Incoming Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-6.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Victoria
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">12 August</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">11:35</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$6.68</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="missed" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Missed Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-7.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Aubrey
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$45.54</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="missed" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Missed Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-8.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Aubrey
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$899.0</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="incoming" width="20" height="29" viewBox="0 0 20 29" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3.0157 1.51959L4.34194 0.958497C5.58566 0.433143 6.98894 1.07088 7.62101 2.44811L8.87943 5.1918C9.42678 6.38644 9.25419 7.84291 8.45296 8.7916L6.21995 11.4322C6.46008 12.9145 7.00747 14.3541 7.86087 15.751C8.67288 17.1033 9.72158 18.2659 10.9449 19.1701L13.7474 17.9384C14.8089 17.4731 16.0219 17.8583 16.7542 18.8939L18.4639 21.3063C19.3167 22.5111 19.2842 24.2469 18.3887 25.3684L17.4299 26.5704C16.4746 27.7666 15.0347 28.2694 13.6511 27.8879C10.3822 26.989 7.2398 23.913 4.21891 18.6601C1.19372 13.3991 -0.04151 8.85063 0.514821 5.02012C0.74859 3.40818 1.69927 2.0759 3.0157 1.51959Z"
+                              fill="#45BA77" />
+                          </svg>
+                          <span>
+                            Incoming Call
+                          </span>
+                        </td>
+                        <td>
+                          <div class="user-wrapper">
+                            <img class="avatar" src="/assets/img/users/user-9.png" alt="">
+                            <div class="text">
+                              <div class="text-1">
+                                Friend
+                              </div>
+                              <div class="text-2">
+                                Kristin
+                              </div>
+                            </div>
+                          </div><!-- /.user END -->
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">16 October</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">12:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$111.00</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-24 col-md-9 col-md-9">
+              <div class="my-4">
+                @@include('./components/_subs_chart.html', {
+                "path": ".",
+                "classes": "text-black"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      @@include('./_footer.html', {
+      "path": ".",
+      "classes": "text-black"
+      })
+    </main>
+
+    @@include('./_scripts.html', {
+    "path": "."
+    })
+
+  </body>
+
+</html>

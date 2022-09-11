@@ -1,0 +1,488 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+// Shades of grey
+$white : #ffffff;
+$gray-50: #F9FAFB;
+$gray-100: #F2F4F6;
+$gray-200: #E5E7EB;
+$gray-300: #D1D5DB;
+$gray-400: #9CA3AF;
+$gray-500: #6B7280;
+$gray-600: #4B5563;
+$gray-700: #374151;
+$gray-800: #1F2937;
+$gray-900: #111827;
+$dark : $gray-800;
+$black : $gray-900;
+
+// fusv-disable
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+// fusv-enable
+
+// Generic colors
+$blue : #2361ce;
+$indigo : #4F46E5;
+$purple : #7C3AED;
+$pink : #EF4683;
+$red : #E11D48;
+$orange : #FBA918;
+$brown : #b9a084;
+$yellow : #f3c78e;
+$yellow-100 : #ffeed6;
+$yellow-200 : #f5dbb8;
+$green : #0EA980;
+$teal : #1E90FF;
+$cyan : #63b1bd;
+$soft-indigo: #f5e8ff;
+$soft-green : #2CA58D;
+
+// scss-docs-start colors-map
+// $colors: (
+//   "blue": $blue,
+//   "indigo": $indigo,
+//   "purple": $purple,
+//   "pink": $pink,
+//   "red": $red,
+//   "orange": $orange,
+//   "yellow": $yellow,
+//   "green": $green,
+//   "teal": $teal,
+//   "cyan": $cyan,
+//   "white": $white,
+//   "gray": $gray-600,
+//   "gray-dark": $gray-800
+// );
+// scss-docs-end colors-map
+
+// Color scheme
+$primary : #AA00AA;
+$secondary: #22043F;
+$tertiary : #31316A;
+
+$success: $green;
+$info : $blue;
+$warning: $yellow;
+$danger : $red;
+$gray : $gray-900;
+$light : $gray-400;
+$lighten: $gray-300;
+$soft : $gray-200;
+$dark : $dark;
+
+// Brands colors
+$facebook : #3b5999;
+$twitter : #1da1f2;
+$google : #DB4337;
+$instagram: #e4405f;
+$pinterest: #bd081c;
+$youtube : #cd201f;
+$slack : #3aaf85;
+$dribbble : #ea4c89;
+$github : #222222;
+$dropbox : #1E90FF;
+$twitch : #4B367C;
+$paypal : #ecb32c;
+$behance : #0057ff;
+$reddit : #E84422;
+
+// Brand colors
+$brand-colors: (
+  "facebook": $facebook,
+  "twitter": $twitter,
+  "google": $google,
+  "instagram": $instagram,
+  "pinterest": $pinterest,
+  "youtube": $youtube,
+  "slack": $slack,
+  "dribbble": $dribbble,
+  "dropbox": $dropbox,
+  "twitch": $twitch,
+  "paypal": $paypal,
+  "behance": $behance,
+  "reddit" : $reddit,
+  "github": $github
+);
+
+// Theme colors
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "white": $white,
+  "indigo": $indigo,
+  "purple": $purple,
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "gray-50": $gray-50,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900
+);
+
+// Navbar colors
+$navbar-colors: (
+  "primary": $primary,
+);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8%;
+
+
+$container-margins: 16px;
+$container-margins-xs: 16px;
+$container-margins-sm: 16px;
+$container-margins-md: 80px;
+$container-margins-lg: 103px;
+$container-margins-xl: 103px;
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$min-contrast-ratio: 3;
+
+// Customize the light and dark text colors for use in our color contrast function.
+$color-contrast-dark : $dark;
+$color-contrast-light: $white;
+
+// fusv-disable
+$blue-100: tint-color($blue, 8);
+$blue-200: tint-color($blue, 6);
+$blue-300: tint-color($blue, 4);
+$blue-400: tint-color($blue, 2);
+$blue-500: $blue;
+$blue-600: shade-color($blue, 2);
+$blue-700: shade-color($blue, 4);
+$blue-800: shade-color($blue, 6);
+$blue-900: shade-color($blue, 8);
+
+// fusv-enable
+
+// Characters which are escaped by the escape-svg function
+$escaped-characters: (
+  ("<", "%3c"),
+  (">", "%3e"),
+  ("#", "%23"),
+  ("(", "%28"),
+  (")", "%29"),
+);
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret : true;
+$enable-rounded : true;
+$enable-shadows : true;
+$enable-gradients : false;
+$enable-transitions : true;
+$enable-reduced-motion : false;
+$enable-grid-classes : true;
+$enable-button-pointers : true;
+$enable-rfs : true;
+$enable-validation-icons : true;
+$enable-negative-margins : false;
+$enable-deprecation-messages: false;
+$enable-important-utilities : true;
+
+// Gradient
+//
+// The gradient which is added to components if `$enable-gradients` is `true`
+// This gradient is also added to elements with `.bg-gradient`
+$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0));
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: ($spacer * 5),
+  7: ($spacer * 8),
+  8: ($spacer * 10),
+  9: ($spacer * 11),
+  10: ($spacer * 14),
+  11: ($spacer * 16),
+  12: ($spacer * 20),
+  'sm': ($spacer * 1),
+  'md': ($spacer * 2),
+  'lg': ($spacer * 4),
+  'xl': ($spacer * 8)
+);
+
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg : #22043F;
+$body-color : #CCCCCC;
+$body-text-align: null;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color : $primary;
+$link-decoration : none;
+$link-hover-color : darken($link-color, 50%);
+$link-hover-decoration : none;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 10%;
+
+$stretched-link-pseudo-element: after;
+$stretched-link-z-index : 1;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 1rem;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+// scss-docs-end grid-breakpoints
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+// scss-docs-end container-max-widths
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns : 24;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns : 12;
+
+$gutters: $spacers;
+
+// Container padding
+
+$container-padding-x: 1rem;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// font awesome
+$fontawesome-webfonts-path: '../vendor/font-awesome/webfonts';
+$font-awesome-5 : 'Font Awesome 5 Free';
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: 'Avenir', sans-serif;
+// stylelint-enable value-keyword-case
+$font-family-base: var(--bs-font-sans-serif);
+$font-family-code: var(--bs-font-monospace);
+
+// $font-size-root effects the value of `rem`, which is used for as well font sizes, paddings and margins
+// $font-size-base effects the font size of the body text
+$font-size-root: null;
+$font-size-base: 1rem;
+$font-size-xs : ($font-size-base * .65);
+$font-size-sm : ($font-size-base * .75);
+$font-size-md : ($font-size-base * 1);
+$font-size-lg : ($font-size-base * 1.25);
+$font-size-xl : ($font-size-base * 1.5);
+$font-size-xxl : ($font-size-base * 2);
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 600;
+$font-weight-extrabold: 700;
+$font-weight-black: 800;
+
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.5;
+$line-height-sm : 1.25;
+$line-height-lg : 2;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$headings-margin-bottom: $spacer * 0.5;
+$headings-font-family : null;
+$headings-font-style : null;
+$headings-font-weight : $font-weight-bold;
+$headings-line-height : 1.3;
+$headings-color : $dark;
+
+// Display headings
+$display1-size: 5rem;
+$display2-size: 3.5rem;
+$display3-size: 2.5rem;
+$display4-size: 1.875rem;
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 5rem,
+  2: 3.5rem,
+  3: 2.5rem,
+  4: 1.875rem,
+  5: 1.2rem,
+  6: 1rem
+);
+
+$display-font-weight: $font-weight-bold;
+$display-line-height: $headings-line-height;
+// scss-docs-end display-headings
+
+$paragraph-font-size : 1rem;
+$paragraph-font-weight: 300;
+$paragraph-line-height: 1.6;
+
+$lead-font-size : $font-size-base * 1.25;
+$lead-font-weight: 300;
+
+$small-font-size: .875em;
+
+$sub-sup-font-size: .75em;
+
+$text-muted: #58677d;
+
+$initialism-font-size: $small-font-size;
+
+$blockquote-margin-y : $spacer;
+$blockquote-font-size : $font-size-base * 1.25;
+$blockquote-footer-color : $gray-600;
+$blockquote-footer-font-size: $small-font-size;
+
+$hr-margin-y: $spacer;
+$hr-color : inherit;
+$hr-opacity : .25;
+
+$legend-margin-bottom: .5rem;
+$legend-font-size : 1.5rem;
+$legend-font-weight : null;
+
+$mark-padding: .2em;
+
+$dt-font-weight: $font-weight-bold;
+
+$nested-kbd-font-weight: $font-weight-bold;
+
+$list-inline-padding: .5rem;
+
+$mark-bg: #fcf8e3;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-bg-scale: -80%;
+
+$table-head-spacer-y : .75rem;
+$table-head-spacer-x : 1rem;
+$table-head-font-size : .75rem;
+$table-head-text-transform: capitlize;
+$table-body-font-size : $font-size-sm;
+
+// $table-variants: (
+//   "primary": shift-color($primary, $table-bg-scale), 
+//   "dark": $dark,
+// );
+
+// Accordion
+$accordion-padding-y : 1rem;
+$accordion-padding-x : 1.25rem;
+$accordion-color : $body-color;
+$accordion-bg : transparent;
+$accordion-border-color : $gray-400;
+
+$accordion-body-padding-y: $accordion-padding-y;
+$accordion-body-padding-x: $accordion-padding-x;
+
+$accordion-button-padding-y : $accordion-padding-y;
+$accordion-button-padding-x : $accordion-padding-x;
+$accordion-button-color : $accordion-color;
+$accordion-button-bg : $accordion-bg;
+$accordion-button-active-bg : $light;
+$accordion-button-active-color: shade-color($primary, 10%);
+
+
+$accordion-icon-width : 1.25rem;
+$accordion-icon-color : $accordion-color;
+$accordion-icon-active-color: $accordion-button-active-color;
+$accordion-icon-transition : transform .2s ease-in-out;
+$accordion-icon-transform : rotate(180deg);
+
+$accordion-button-icon : url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+
+// Footer
+
+$footer-link-font-size : .85rem;
+$footer-bg : theme-color("secondary");
+$footer-color : $gray-600;
+$footer-link-color : $gray-600;
+$footer-link-hover-color : $gray-700;
+$footer-heading-color : $gray-600;
+$footer-heading-font-size: $font-size-sm;
+$padding-footer-sm : .125rem;
+$padding-footer : .375rem;
+$padding-footer-md : .625rem;
+$padding-footer-general : .9375rem;
+$padding-footer-big : 1.5rem;

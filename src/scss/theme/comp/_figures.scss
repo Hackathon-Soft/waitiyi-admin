@@ -1,0 +1,118 @@
+/**
+ * = Figures
+ */
+
+.stat {
+  position: relative;
+
+  .custom-border {
+    height: 100%;
+    height: 50px;
+    height: 62px;
+    width: 8px;
+    border-radius: 4px;
+    background: #bdbdbd;
+  }
+
+  &-1 {
+    .custom-border {
+      background: #D6EEEC;
+    }
+  }
+
+  &-2 {
+    .custom-border {
+      background: #1A4384;
+    }
+  }
+
+  &-3 {
+    .custom-border {
+      background: #22A09D;
+    }
+  }
+}
+
+.fill-height {
+  min-height: 5px;
+  display: flex;
+  flex-direction: column;
+
+  >div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    >div {
+      // also flex items 
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    >div {
+      flex: 1;
+      display: flex;
+    }
+
+    min-height: 5px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    >div {
+      flex: 1;
+      display: flex;
+    }
+
+    min-height: 5px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    >div {
+      flex: 1;
+      display: flex;
+    }
+
+    min-height: 100%;
+    height: 100%;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {}
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @include media-breakpoint-up(xxl) {}
+}
+
+.h-auto-md-100 {
+  min-height: 5px;
+  height: auto;
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    min-height: 5px;
+    height: auto;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    min-height: 5px;
+    height: auto;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    min-height: 100%;
+    height: 100%;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {}
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @include media-breakpoint-up(xxl) {}
+}

@@ -1,0 +1,398 @@
+// General styles
+
+.table {
+
+  thead th {
+    padding-top: $table-head-spacer-y;
+    padding-bottom: $table-head-spacer-y;
+    font-size: $table-head-font-size;
+    text-transform: $table-head-text-transform;
+    font-weight: $font-weight-bolder;
+    border-top: 0;
+  }
+
+  th {
+    font-weight: $font-weight-bold;
+    padding: 1rem;
+  }
+
+  td {
+    .progress {
+      height: 3px;
+      width: 120px;
+      margin: 0;
+    }
+  }
+
+  td,
+  th {
+    font-size: $table-body-font-size;
+    white-space: nowrap;
+  }
+
+  // User Table
+
+  &.user-table {
+    thead th {
+      border-top: 0;
+    }
+  }
+
+  // Vetical align table content
+
+  &.align-items-center {
+
+    td,
+    th {
+      vertical-align: middle;
+    }
+  }
+
+
+  // Styles for dark table
+
+  .thead-dark {
+    th {
+      background-color: $gray-800;
+      color: $white;
+
+      a {
+        color: $dark;
+      }
+    }
+  }
+
+
+  // Styles for light table
+
+  .thead-light {
+    th {
+      background-color: $gray-100;
+      color: $dark;
+
+      a {
+        color: $dark;
+      }
+    }
+  }
+}
+
+//  
+.table,
+table {
+  background-color: transparent !important;
+
+  tr {
+
+    th,
+    td {
+      padding: 0;
+    }
+  }
+
+  thead {
+    tr {
+      th {}
+    }
+  }
+
+  tbody {
+    border-top: none !important;
+
+    tr {
+      th {
+        font-weight: bold;
+      }
+
+      td {
+        border: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+table.call-history {
+  tr {
+
+    td,
+    th {
+      padding: 15px 0;
+
+      // background-color: red;
+      &.call-status {
+        svg {
+          margin-right: 30px;
+
+          path {}
+
+          &.missed {
+            fill: #FF4C4D;
+
+            path {
+              fill: #FF4C4D;
+            }
+          }
+
+          &.outgoing {
+            fill: #384AF2;
+
+            path {
+              fill: #384AF2;
+            }
+          }
+
+          &.incoming {
+            fill: #45BA77;
+
+            path {
+              fill: #45BA77;
+            }
+          }
+        }
+
+        span {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+        }
+      }
+
+      .user-wrapper {
+        display: flex;
+        align-items: center;
+
+        img.avatar {
+          margin-right: 11px;
+        }
+
+        .text-1 {}
+
+        .text-2 {}
+      }
+
+      .head,
+      .text-1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #8D8D8D;
+        margin-bottom: 3px;
+      }
+
+      .text-2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+      }
+    }
+
+    th {
+      border: 0;
+
+      .text-1,
+      .head {
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+table.transiction-history {
+  tr {
+
+    td,
+    th {
+      padding: 15px 0;
+
+      // background-color: red;
+      &.call-status {
+        svg {
+          margin-right: 30px;
+
+          path {
+            fill: #fff;
+          }
+
+          &.added {
+            fill: rgba(254, 194, 142, 0.6);
+
+            circle {
+              fill: rgba(254, 194, 142, 0.6);
+            }
+          }
+
+          &.removed {
+            fill: #F9587F;
+
+            circle {
+              fill: #F9587F;
+            }
+          }
+
+          &.used {
+            fill: #27C294;
+
+            circle {
+              fill: #27C294;
+            }
+          }
+
+          &.wasted {
+            fill: #4E33FF;
+
+            circle {
+              fill: #4E33FF;
+            }
+          }
+
+          &.style-5 {
+            fill: #7efc8a99;
+
+            circle {
+              fill: #7efc8a99;
+            }
+          }
+        }
+
+        span {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+        }
+      }
+
+      .head,
+      .text-1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #8D8D8D;
+        margin-bottom: 3px;
+      }
+
+      .text-2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+      }
+    }
+
+    th {
+      border: 0;
+
+      .text-1,
+      .head {
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+table.refferals {
+  tr {
+
+    td,
+    th {
+      padding: 15px 0;
+
+      .user-wrapper {
+        display: flex;
+        align-items: center;
+
+        img.avatar {
+          margin-right: 11px;
+        }
+
+        .text-1 {}
+
+        .text-2 {}
+      }
+
+      .earning-status {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        &.yes {
+          color: #47EB89;
+        }
+
+        &.not {
+          color: #FF6682;
+        }
+      }
+
+      .btn-status {
+        min-width: 146px;
+        display: inline-block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        border: 0.2px solid #FFFFFF;
+        padding: 12px;
+        border-radius: 15px;
+
+        &.invite {
+          background: #8B25DA;
+          border-radius: 15px;
+          border: 1px solid #8B25DA;
+        }
+
+        &.accepted {
+          background: #45136D;
+          border: 1px solid #45136D;
+        }
+
+        &.pending {
+          background: #21043D;
+          border: 1px solid #AA00AA;
+        }
+      }
+
+      .head,
+      .text-1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #8D8D8D;
+        margin-bottom: 3px;
+      }
+
+      .text-2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+      }
+    }
+
+    th {
+      border: 0;
+
+      .text-1,
+      .head {
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

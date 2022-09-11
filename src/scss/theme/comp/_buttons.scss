@@ -1,0 +1,335 @@
+/*
+* = Buttons
+*/
+
+.btn {
+
+  &-rounded {
+    border-radius: 10px;
+  }
+
+  &:not(.btn-link) {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  border-radius: 30px;
+  font-weight: 500;
+  // font-size: 18px;
+  // line-height: 22px;
+  padding: $padding-xs;
+  font-size: $fs-xs;
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    padding: $padding-sm;
+    font-size: $fs-sm;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    padding: $padding-md;
+    font-size: $fs-md;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    padding: $padding-lg;
+    font-size: $fs-lg;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {
+    padding: $padding-xl;
+    font-size: $fs-xl;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @include media-breakpoint-up(xxl) {
+    padding: $padding-xxl;
+    font-size: $fs-xl;
+  }
+
+  &-sm {
+    padding: $padding-xxs;
+    font-size: $fs-xxs;
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      padding: $padding-xs;
+      font-size: $fs-xxs;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      padding: $padding-sm;
+      font-size: $fs-xs;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      padding: $padding-md;
+      font-size: $fs-sm;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      padding: $padding-lg;
+      font-size: $fs-sm;
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @include media-breakpoint-up(xxl) {
+      padding: $padding-xl;
+      font-size: $fs-sm;
+    }
+  }
+
+  &-primary {
+    background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}
+
+.datepicker-controls {
+  button.button {
+    font-weight: 500;
+    padding: $padding-xs;
+    font-size: $fs-xs;
+    outline: none;
+    color: #fff;
+    background-color: $primary;
+    border-color: darken($primary, 5%);
+    box-shadow: none;
+  }
+}
+
+// Fix for darken background color
+@each $color,
+$value in $theme-colors {
+  .btn-outline-#{$color} {
+    background-color: transparent;
+    border-color: darken($value, 0%);
+
+    &:hover {
+      @if (lightness($value)>=55) {
+        color: #000;
+      }
+
+      @if (lightness($value)<=45) {
+        color: #fff;
+      }
+
+      background-color: darken($value, 5%);
+      border-color: darken($value, 5%);
+    }
+  }
+
+  .btn-#{$color} {
+    &:hover {
+      @if (lightness($value)>=55) {
+        color: #000;
+      }
+
+      @if (lightness($value)<=45) {
+        color: #fff;
+      }
+
+      background-color: darken($value, 5%);
+      border-color: darken($value, 5%);
+    }
+  }
+}
+
+
+.btn-success {
+  color: #fff;
+}
+
+.btn-group,
+.custom-btns {
+  box-shadow: box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($success, .5));
+
+  .btn-check {
+
+    &:active {
+      background-color: rgba($success, 0.1);
+    }
+  }
+
+  label {
+    color: $body-gray;
+    border-color: $body-gray;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $body-gray;
+      background-color: rgba($success, 0.1);
+      box-shadow: inset box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($success, .5));
+      box-shadow: none;
+    }
+
+    svg {
+      fill: $body-gray;
+
+      path {
+        fill: $body-gray;
+      }
+    }
+  }
+
+  &.social {
+    label {
+      padding-left: 2px;
+      padding-right: 2px;
+
+      // Small devices (landscape phones, 576px and up)
+      @include media-breakpoint-up(sm) {
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @include media-breakpoint-up(md) {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @include media-breakpoint-up(lg) {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @include media-breakpoint-up(xl) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      // XX-Large devices (larger desktops, 1400px and up)
+      @include media-breakpoint-up(xxl) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      svg {
+        width: 10px;
+        height: 10px;
+
+        // Small devices (landscape phones, 576px and up)
+        @include media-breakpoint-up(sm) {
+          width: 12px;
+          height: 12px;
+        }
+
+        // Medium devices (tablets, 768px and up)
+        @include media-breakpoint-up(md) {
+          width: 16px;
+          height: 16px;
+        }
+
+        // Large devices (desktops, 992px and up)
+        @include media-breakpoint-up(lg) {
+          width: 18px;
+          height: 18px;
+        }
+
+        // X-Large devices (large desktops, 1200px and up)
+        @include media-breakpoint-up(xl) {
+          width: 20px;
+          height: 20px;
+        }
+
+        // XX-Large devices (larger desktops, 1400px and up)
+        @include media-breakpoint-up(xxl) {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+  }
+
+  input.btn-check {
+    &:checked {
+      +label {
+        color: $success;
+        border-color: $success;
+        background-color: rgba($success, 0.1);
+        box-shadow: none;
+
+        svg {
+          fill: $success;
+
+          path {
+            fill: $success;
+          }
+        }
+      }
+    }
+  }
+}
+
+.int-steps {
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50% !important;
+    border: 2px solid #D9D9D9;
+
+    svg {
+      width: 34px;
+      height: 34px;
+    }
+
+    b {
+      display: none;
+
+      svg {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  .btn-check {
+
+    &:checked {
+      position: absolute;
+
+      +.btn {
+        position: relative;
+        border: 2px solid $secondary;
+
+        b {
+          // position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: $secondary;
+
+          svg {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+    }
+  }
+
+}

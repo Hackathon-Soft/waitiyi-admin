@@ -1,0 +1,93 @@
+/**
+ * = Forms
+ */
+
+label:not(.form-check-label),
+.form-label,
+label {
+  font-style: normal;
+  font-weight: 400;
+  color: #3C3C3C;
+  line-height: 22px;
+  margin-bottom: 4px;
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    font-size: $fs-sm;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    font-size: $fs-md;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    font-size: $fs-lg;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {
+    font-size: $fs-xl;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @include media-breakpoint-up(xxl) {
+    font-size: $fs-xl;
+  }
+}
+
+.add-logo-wrapper {
+  border: 2px dashed $success;
+  border-radius: 4px;
+}
+
+.btn-group {
+  &.custom-radio-group {
+    .btn.btn-outline-success {
+      color: #3C3C3C;
+      border: 1px solid #D7D7D7;
+
+      // &:focus,
+      &:hover {
+        background: rgba($success, 0.03);
+        border: 1px solid $success;
+      }
+    }
+
+    input.btn-check {
+      &:checked {
+        +.btn.btn-outline-success {
+          background: #E7F5F4;
+          background: rgba($success, 0.07);
+          border: 1px solid $success;
+          color: $success;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+$form-check-input-checked-bg-color: $success;
+$form-check-input-border: $success;
+$form-check-input-focus-border: $success;
+
+.form-switch {
+  .form-check-input {
+    border: $form-check-input-border;
+
+    &:focus {
+      border-color: $form-check-input-focus-border;
+      background-color: rgb(212, 212, 212);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%2310B981'/%3E%3C/svg%3E");
+    }
+
+    &:checked {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+      background-color: $form-check-input-checked-bg-color;
+      border-color: $form-check-input-checked-border-color;
+    }
+
+  }
+}

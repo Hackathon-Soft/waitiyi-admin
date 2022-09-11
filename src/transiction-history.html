@@ -1,0 +1,326 @@
+<html lang="en">
+
+  <head>
+    @@include('./_head.html', {
+    "path": ".",
+    "title": "Waitiyi - Transaction History"
+    })
+  </head>
+
+  <body>
+    <header class="main-header w-100">
+      @@include('./_nav.html', {
+      "path": "."
+      })
+
+      @@include('./_navigation.html', {
+      "path": ".",
+      "classes": ""
+      })
+    </header>
+
+    <main class="content pt-2">
+      <section>
+        <div class="container-fluid section-x-margins">
+          <div class="row align-items-start justify-content-between">
+            <div class="col-sm-24 col-md-15 col-lg-15">
+              <div class="my-4">
+                <h2 class="title-1 mb-4">Transaction History</h2>
+
+
+                <div class="input-group search-bar mb-3">
+                  <span class="input-group-text pe-0" id="basic-addon1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_7_1348)">
+                        <path
+                          d="M8.75 16.25C12.8921 16.25 16.25 12.8921 16.25 8.75C16.25 4.60786 12.8921 1.25 8.75 1.25C4.60786 1.25 1.25 4.60786 1.25 8.75C1.25 12.8921 4.60786 16.25 8.75 16.25Z"
+                          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.375 14.375L18.75 18.75" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_7_1348">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                    aria-describedby=" " />
+                </div>
+                <div class="border-0 table-wrapper table-responsive">
+                  <table class="transiction-history table table-hover">
+                    <thead>
+                      <tr>
+                        <th class="call-status">
+                          <svg class="style-5" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up added
+                          </span>
+                        </th>
+                        <th>
+                          <div class="head">Date</div>
+                          <div class="text-2">11 july</div>
+                        </th>
+                        <th>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </th>
+                        <th>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2"> - </div>
+                        </th>
+                        <th>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Item -->
+                      <tr>
+                        <td class="call-status">
+                          <svg class="wasted" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up added
+                          </span>
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$34.0</div>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="added" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up added
+                          </span>
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$333.34</div>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="used" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up added
+                          </span>
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">04 December</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">03:15</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2"> - </div>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="added" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up Used
+                          </span>
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">12 August</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">11:35</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$6.68</div>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="removed" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up added
+                          </span>
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$45.54</div>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="removed" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up added
+                          </span>
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">28 july</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">07:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$899.0</div>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="call-status">
+                          <svg class="added" width="30" height="31" viewBox="" 0 0 30 31" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15.7871" r="15" fill="#9B375F" />
+                            <path d="M7 21.7275H23L15.0415 11.9451L7 21.7275ZM7 11.9451H23V10.2871H7V11.9451Z"
+                              fill="white" />
+                          </svg>
+                          <span>
+                            Top Up added
+                          </span>
+                        </td>
+                        <td>
+                          <div class="head">Date</div>
+                          <div class="text-2">16 October</div>
+                        </td>
+                        <td>
+                          <div class="head">Time</div>
+                          <div class="text-2">12:00</div>
+                        </td>
+                        <td>
+                          <div class="head stye-2">Amount</div>
+                          <div class="text-2">+$111.00</div>
+                        </td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-outline-white">
+                            Details
+                          </a>
+                        </td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-24 col-md-9 col-md-9">
+              <div class="my-4">
+                @@include('./components/_subs_chart.html', {
+                "path": ".",
+                "classes": "text-black"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      @@include('./_footer.html', {
+      "path": ".",
+      "classes": "text-black"
+      })
+    </main>
+
+    @@include('./_scripts.html', {
+    "path": "."
+    })
+
+  </body>
+
+</html>

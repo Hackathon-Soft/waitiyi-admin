@@ -1,0 +1,69 @@
+<!--
+
+=================================
+* Waitiyi - Admin Dashboard
+=================================
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include('./_head.html', {
+    "path": ".",
+    "title": "Waitiyi - Lock Page"
+    })
+  </head>
+
+  <body>
+    <header class="main-header w-100">
+      @@include('./_nav.html', {
+      "path": "."
+      })
+
+      @@include('./_navigation.html', {
+      "path": ".",
+      "classes": ""
+      })
+    </header>
+
+    <main>
+
+      <!-- Section -->
+      <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+        <div class="container">
+          <div class="bg-secondary">
+
+          </div><!-- /.bg-secondary END -->
+          <div class="row justify-content-center form-bg-image">
+            <div class="col-24 col-md-13 col-lg-12 col-xl-12">
+              <div class="text-center text-md-center mb-4 mt-md-0">
+                <br />
+                <br />
+                <h1 class="text-white fw-700 h3 mb-4">Top Up Added Successfully</h1>
+                <div class="badge text-bg-primary rounded-circle p-1 mb-3">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img class="rounded-circle" alt="Image placeholder"
+                      src="../../assets/img/thumb-up-dynamic-color.png" />
+                  </div><!-- / END -->
+                </div><!-- /.badge badge-pill END -->
+                <p class="mb-4">
+                  Amount of <b>100$</b> have been successfully added to your watiyi Balance.
+                </p>
+                <a href="" class="btn btn-primary px-4 px-md-5">
+                  <span class="px-5">Done</span><!-- /.px-5 END -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./_scripts.html', {
+    "path": "."
+    })
+
+  </body>
+
+</html>

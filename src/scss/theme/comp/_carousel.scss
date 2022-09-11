@@ -1,0 +1,49 @@
+/**
+ * = Bootstrap carousels
+ */
+
+.carousel-caption {
+
+  &,
+  h5 {}
+}
+
+//Indicators
+
+.carousel-indicators {
+  li {
+    height: 10px;
+    width: 10px;
+    background: transparent;
+  }
+
+  .active {
+    opacity: 1;
+  }
+}
+
+//Carousel Controls 
+
+.swiper-btn {
+  svg {
+    fill: #0EA980 !important;
+
+    path {
+      fill: #0EA980 !important;
+    }
+  }
+
+  &.swiper-button-disabled {
+    svg {
+      fill: #D7D7D7 !important;
+
+      path {
+        fill: #D7D7D7 !important;
+      }
+    }
+  }
+
+  &-prev {}
+
+  &-next {}
+}

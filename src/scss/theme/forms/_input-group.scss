@@ -1,0 +1,83 @@
+.input-group {
+  .form-control {
+    padding: $padding-xs;
+    font-size: $fs-xs;
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      padding: $padding-sm;
+      font-size: $fs-sm;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      padding: $padding-md;
+      font-size: $fs-md;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      padding: $padding-lg;
+      font-size: $fs-lg;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      padding: $padding-xl;
+      font-size: $fs-xl;
+    }
+
+    // XX-Large devices (larger desktops, 1400px and up)
+    @include media-breakpoint-up(xxl) {
+      padding: $padding-xxl;
+      font-size: $fs-xl;
+    }
+
+    // &-sm {
+    //   padding: $padding-xxs;
+    //   font-size: $fs-xxs;
+
+    //   // Small devices (landscape phones, 576px and up)
+    //   @include media-breakpoint-up(sm) {
+    //     padding: $padding-xs;
+    //     font-size: $fs-xxs;
+    //   }
+
+    //   // Medium devices (tablets, 768px and up)
+    //   @include media-breakpoint-up(md) {
+    //     padding: $padding-sm;
+    //     font-size: $fs-xs;
+    //   }
+
+    //   // Large devices (desktops, 992px and up)
+    //   @include media-breakpoint-up(lg) {
+    //     padding: $padding-md;
+    //     font-size: $fs-sm;
+    //   }
+
+    //   // X-Large devices (large desktops, 1200px and up)
+    //   @include media-breakpoint-up(xl) {
+    //     padding: $padding-lg;
+    //     font-size: $fs-sm;
+    //   }
+
+    //   // XX-Large devices (larger desktops, 1400px and up)
+    //   @include media-breakpoint-up(xxl) {
+    //     padding: $padding-xl;
+    //     font-size: $fs-sm;
+    //   }
+    // }
+  }
+
+  .form-control:focus {
+    border-color: $input-border-color;
+
+    &+.input-group-text {
+      border-color: $input-border-color;
+    }
+  }
+}
+
+.input-group-text {
+  @include box-shadow($input-box-shadow);
+}

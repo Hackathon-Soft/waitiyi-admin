@@ -1,0 +1,54 @@
+/**
+ * = Avatars
+ */
+
+.avatar+.avatar-content {
+  display: inline-block;
+  margin-left: 0.75rem;
+}
+
+.avatar-sm {
+  // width: $avatar-sm-y;
+  // height: $avatar-sm-x;
+
+  img {
+    // width: $avatar-sm-y;
+    // height: $avatar-sm-x;
+  }
+}
+
+.avatar {
+  // width: $avatar-y;
+  // height: $avatar-x;
+
+  img {
+    // width: $avatar-y;
+    // height: $avatar-x;
+  }
+}
+
+.avatar-offline {
+  &::before {
+    background-color: $danger;
+  }
+}
+
+// Overlapped avatars
+.avatar-group {
+  .avatar {
+    position: relative;
+    z-index: 0;
+
+    img {
+      border: 2px solid $white;
+    }
+
+    &:hover {
+      z-index: 3;
+    }
+  }
+
+  .avatar+.avatar {
+    margin-left: -1rem;
+  }
+}

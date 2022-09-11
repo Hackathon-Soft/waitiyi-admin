@@ -1,0 +1,51 @@
+// @import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
+
+
+@import "./theme/variables";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "./theme/variables";
+
+// update variables here
+@import "custom/variables";
+
+// Third party
+// @import '../../node_modules/vanillajs-datepicker/sass/datepicker.scss';
+@import "node_modules/chartist/dist/scss/chartist.scss";
+
+// fonts
+@import "./theme/fonts";
+// theme mixins & functions
+@import "./theme/mixins";
+// sections
+@import "./theme/sections";
+
+// Layout
+@import "./theme/layout";
+
+// Forms
+@import "./theme/forms";
+
+// Components
+@import "./theme/all_components";
+
+// PLUGINs
+// @import "./plugins/datepicker/datepicker-bs5";
+
+.bg-light {
+  background: #F5FBFA;
+}
+
+.bg-preview {
+  background: #E7F5F4;
+}
+
+.bg-modals {
+  background: #F1F5F8;
+}
+
+.mw-100px {
+  min-width: 100px;
+}

@@ -1,0 +1,344 @@
+<html lang="en">
+
+  <head>
+    @@include('./_head.html', {
+    "path": ".",
+    "title": "Waitiyi - Home"
+    })
+  </head>
+
+  <body>
+    <header class="main-header w-100">
+      @@include('./_nav.html', {
+      "path": "."
+      })
+
+      @@include('./_navigation.html', {
+      "path": ".",
+      "classes": ""
+      })
+    </header>
+
+    <main class="content pt-2">
+      <section>
+        <div class="container-fluid section-x-margins">
+          <div class="row row-flex justify-content-between">
+            <div class="col-sm-24 col-md-15 col-lg-15 d-flex align-items-stretch">
+              <div class="my-4 w-100 mb-4">
+                <div class="card charts border-0 h-100 w-100 mb-3">
+                  <div class="card-body p-0">
+                    <img class="svg" src="/assets/img/logo.png" alt="">
+                    <h4 class="balance">$658.75</h4>
+                    <h6 class="heading">Refer and earn $5 each ✨ </h6>
+                    <p class="text-card">
+                      Get rewards, gift & More
+                    </p><!-- /.text-card END -->
+                    <a href="#" class="btn btn-primary w-100 mt-1">
+                      Share Now
+                    </a>
+                  </div>
+                </div><!-- / END -->
+              </div>
+            </div>
+            <div class="col-sm-24 col-md-9 col-md-9 d-flex align-items-stretch">
+              <div class="my-4 mb-4">
+                @@include('./components/_subs_chart.html', {
+                "path": ".",
+                "classes": " h-100 "
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section>
+        <div class="container-fluid section-x-margins">
+          <div class="row row-flex justify-content-between">
+            <div class="col-sm-24 col-md-7 col-lg-7 d-flex align-items-stretch">
+              <div class="my-4 w-100">
+                <div class="card charts border-0 h-100 w-100 mb-3">
+                  <div class="card-header mb-0">
+                    <h6 class="h5 text-white fw-700 mb-3 mb-md-0">
+                      Earnings
+                    </h6>
+                  </div>
+                  <div class="card-body p-0">
+                    <br /><br />
+                    <div class="ct-chart-filter-earning1 ct-major-sixth"></div>
+                  </div>
+                </div><!-- / END -->
+              </div>
+            </div>
+            <div class="col-sm-24 col-md-8 col-lg-8 d-flex align-items-stretch">
+              <div class="my-4 w-100">
+                <div class="card charts card-style-2 border-0 h-100 w-100 mb-3">
+                  <div class="card-header mb-0">
+                    <div class="row d-flex flex-wrap align-items-center justify-content-between">
+                      <div class="col-md-12">
+                        <h6 class="h5 text-white fw-700 mb-3 mb-md-0">
+                          Filter Earning
+                        </h6>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-end">
+                          <select class="form-select card-select" aria-label="">
+                            <option selected>Last 7 days</option>
+                            <option value="1">Last 14 days</option>
+                            <option value="2">Last 21 days</option>
+                            <option value="3">Last 1 month</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <br /><br />
+                    <div class="ct-chart-filter-earning ct-major-sixth"></div>
+                  </div>
+                </div><!-- / END -->
+              </div>
+            </div>
+            <div class="col-sm-24 col-md-9 col-md-9 d-flex align-items-stretch">
+              <div class="my-4 w-100">
+                <div class="card charts card-style-2 border-0 h-100 w-100 mb-3">
+                  <div class="card-header mb-0">
+                    <div class="row d-flex flex-wrap align-items-center justify-content-between">
+                      <div class="col-md-12">
+                        <h6 class="h5 text-white fw-700 mb-3 mb-md-0">
+                          Balance Overview
+                        </h6>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="d-flex justify-content-end">
+                          <span class="card-select-label">Sort by:</span>
+                          <select class="form-select card-select card-select-2" aria-label="">
+                            <option selected>Current Year</option>
+                            <option value="1">Last Year</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <br /><br />
+                    <div class="ct-chart-filter-earning3 ct-major-sixth"></div>
+                  </div>
+                </div><!-- / END -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-fluid section-x-margins">
+          <div class="row row-flex justify-content-between">
+            <div class="col-sm-24 col-md-9 col-md-9 d-flex align-items-stretch">
+              <div class="my-4 w-100">
+                <div class="card charts border-0 h-100 w-100 mb-3">
+                  <h3 class="card-header custom mb-0">
+                    <span>Calls Details</span>
+                    <select class="form-select card-select" aria-label="">
+                      <option selected>Last 7 days</option>
+                      <option value="1">Last 14 days</option>
+                      <option value="2">Last 21 days</option>
+                      <option value="3">Last 1 month</option>
+                    </select>
+                  </h3>
+                  <div class="card-body p-0">
+                    <div class="ct-chart-calls-wrapper mx-auto my-5">
+                      <div class="ct-chart-calls ct-square"></div>
+                    </div><!-- /.w-75 END -->
+                    <br /><br />
+                    <div class="my-2">
+                      <div class="my-3">
+                        <div class="row align-items-center g-0 mx-0">
+                          <div class="col-md-16">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <rect width="10" height="10" fill="#2FE963" />
+                            </svg>
+                            Incoming Calls
+                          </div>
+                          <div class="col-md-8">
+                            <div class="text-end">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 6.66687L15 11.6669H5L10 6.66687Z"
+                                  fill="#2FE963" />
+                              </svg>
+                              10.52%
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.my-3 END -->
+                      <div class="my-3">
+                        <div class="row align-items-center g-0 mx-0">
+                          <div class="col-md-16">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <rect width="10" height="10" fill="#D80027" />
+                            </svg>
+                            Missed Calls
+                          </div>
+                          <div class="col-md-8">
+                            <div class="text-end">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 6.66687L15 11.6669H5L10 6.66687Z"
+                                  fill="#2FE963" />
+                              </svg>
+                              10.52%
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- /.my-3 END -->
+                      <div class="my-3">
+                        <div class="row align-items-center g-0 mx-0">
+                          <div class="col-md-16">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <rect width="10" height="10" fill="#3761F4" />
+                            </svg>
+                            outgoing Calls
+                          </div>
+                          <div class="col-md-8">
+                            <div class="text-end">
+                              <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3331L5 8.33313H15L10 13.3331Z"
+                                  fill="#FF3358" />
+                              </svg>
+                              2.52%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- /.mb END -->
+                  </div><!-- /.my-3 END -->
+                </div><!-- / END -->
+              </div>
+            </div>
+            <div class="col-sm-24 col-md-15 col-lg-15 d-flex align-items-stretch">
+              <div class="my-4 w-100">
+                <div class="card charts card-style-2 border-0 h-100 w-100 mb-3 p-0">
+                  <div class="card-outer-body">
+                    <div class="card-header mb-0">
+                      <div class="row d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="col-md-12">
+                          <h6 class="h5 text-white fw-700 mb-3 mb-md-0">
+                            Earning Metrices
+                          </h6>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="d-flex justify-content-end">
+                            <div class="btn-group custom-radio-group" role="group" aria-label="">
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+                              <label class="btn btn-outline-success" for="btnradio1">Daily</label>
+
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                              <label class="btn btn-outline-success" for="btnradio2">Weekly</label>
+
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                checked />
+                              <label class="btn btn-outline-success" for="btnradio3">Monthly</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="">
+                    <div class="row g-0 row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+                      <div class="col mb-3 mt-2">
+                        <div class="chart-top-wrapper test-center">
+                          <div class="text-1-wrapper">
+                            <h5 class="figure">$854</h5>
+                            <div class="percentage">
+                              49%
+                              <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M8.36173 5.84203L3.86948 11.1833L3.13147 10.3058L7.6232 4.96454H3.66436V3.72339H9.40559V10.5497H8.36173V5.84203Z"
+                                  fill="#0AB39C" />
+                              </svg>
+                            </div>
+                          </div>
+                          <h4 class="text-2">Avg. Earning</h4>
+                        </div>
+                      </div>
+                      <div class="col mb-3 mt-2">
+                        <div class="chart-top-wrapper test-center">
+                          <div class="text-1-wrapper">
+                            <h5 class="figure">1,278</h5>
+                            <div class="percentage">
+                              60%
+                              <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M8.36173 5.84203L3.86948 11.1833L3.13147 10.3058L7.6232 4.96454H3.66436V3.72339H9.40559V10.5497H8.36173V5.84203Z"
+                                  fill="#0AB39C" />
+                              </svg>
+                            </div>
+                          </div>
+                          <h4 class="text-2">Conversion Rate</h4>
+                        </div>
+                      </div>
+                      <div class="col mb-3 mt-2">
+                        <div class="chart-top-wrapper border-0 test-center">
+                          <div class="text-1-wrapper">
+                            <h5 class="figure">$45</h5>
+                          </div>
+                          <h4 class="text-2">Avg. Top Up</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-outer-body">
+                    <div class="card-body p-0">
+                      <div class="mb-4">
+                        <div class="row align-items-center">
+                          <div class="ct-chart-sales-value ct-major-eleventh"></div>
+
+                          <div class="d-flex justify-content-center">
+                            <div class="me-3">
+                              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5" cy="5" r="5" fill="#8D22D6" />
+                              </svg>
+                              Last Year
+                            </div>
+                            <div>
+                              <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5" cy="5" r="5" fill="#A801AC" />
+                              </svg>
+                              Current Year
+                            </div>
+                          </div><!-- /.d-flex justifty-content-center END -->
+                        </div>
+                      </div><!-- /.d-flex flex-column END -->
+                    </div>
+                  </div>
+                </div><!-- / END -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      @@include('./_footer.html', {
+      "path": ".",
+      "classes": "text-black"
+      })
+    </main>
+
+    @@include('./_scripts.html', {
+    "path": "."
+    })
+
+  </body>
+
+</html>

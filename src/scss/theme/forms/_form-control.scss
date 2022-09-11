@@ -1,0 +1,107 @@
+.form-control,
+.form-select {
+
+  padding: $padding-xs;
+  font-size: $fs-xs;
+
+  // Small devices (landscape phones, 576px and up)
+  @include media-breakpoint-up(sm) {
+    padding: $padding-sm;
+    font-size: $fs-sm;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @include media-breakpoint-up(md) {
+    padding: $padding-md;
+    font-size: $fs-md;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @include media-breakpoint-up(lg) {
+    padding: $padding-lg;
+    font-size: $fs-lg;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @include media-breakpoint-up(xl) {
+    padding: $padding-xl;
+    font-size: $fs-xl;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @include media-breakpoint-up(xxl) {
+    padding: $padding-xxl;
+    font-size: $fs-xl;
+  }
+
+  // border: 1px solid #D7D7D7;
+  border: none;
+  background: #380F57;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  color: #1d1d1d;
+
+  &:focus,
+  &:active,
+  &:hover {
+    color: #1d1d1d;
+    background: #380F57;
+    box-shadow: none;
+  }
+
+  @include placeholder {
+    color: #606060;
+  }
+
+  &[type='file'] {
+    padding: 0;
+  }
+}
+
+.search-bar.input-group {
+  background: #380F57;
+  border-radius: 50px;
+  width: 50%;
+  min-width: 300px;
+  max-width: 400px;
+
+  span.input-group-text,
+  .form-control {
+    padding: 14px 25px;
+  }
+
+  span.input-group-text {
+    border-radius: 50px;
+    border: none;
+    background: transparent;
+
+    svg {
+
+      g {
+
+        path {}
+      }
+    }
+  }
+
+  .form-control {
+    color: #fff;
+    border-radius: 50px;
+  }
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #37055C inset !important;
+  -webkit-text-fill-color: white !important;
+  color: white !important;
+}

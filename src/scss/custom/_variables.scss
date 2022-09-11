@@ -1,0 +1,41 @@
+$primary: #1B4785;
+$primary-gradient: linear-gradient(89.12deg, #18367E 0.76%, #21809C 99.73%);
+$secondary: #22A09D;
+$success: #0EA980;
+$danger: #FB3529;
+$gray: #3C3C3CA6;
+$body-gray: #707070;
+$body-gray-2: #F5F5F5;
+$white: #fff;
+
+$form-check-input-checked-bg-color: $success;
+$form-check-input-checked-border-color: $success;
+
+$font-family-sans-serif: 'Avenir', sans-serif;
+
+$input-color : #3C3C3C;
+// $input-focus-bg : $input-bg;
+$input-focus-border-color: lighten($success, 25%);
+$input-focus-color : $input-color;
+
+
+.bg-gray-2 {
+  background-color: $body-gray-2;
+}
+
+$padding-xxxs: 0.15rem 1rem;
+$padding-xxs: 0.20rem 1rem;
+$padding-xs: 0.25rem 1rem;
+$padding-sm: 0.3rem 1rem;
+$padding-md: 0.45rem 1rem;
+$padding-lg: 0.4rem 1rem;
+$padding-xl: 0.45rem 1rem;
+$padding-xxl: 0.5rem 1rem;
+
+$fs-xxs : 12px;
+$fs-xs : 13px;
+$fs-sm : 14px;
+$fs-md : 14.5px;
+$fs-lg : 15px;
+$fs-xl : 15px;
+$fs-xxl : 15px;

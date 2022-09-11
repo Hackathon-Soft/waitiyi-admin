@@ -1,0 +1,23 @@
+.alert-heading {}
+
+.alert-icon {
+  margin-bottom: .5rem;
+
+  span {}
+}
+
+.custom-alert {
+  &.alert {
+    border-width: 0px;
+    border-top: 6px solid rgb(142, 142, 142);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.45);
+
+    // &-success {
+    //   border-color: $success;
+    //   background: rgba($success, 0.05);
+    // } 
+  }
+}

@@ -1,0 +1,15 @@
+/**
+ * = Badges
+ */
+
+.badge {
+
+  a {}
+
+  &.super-badge {
+    vertical-align: super;
+  }
+}
+
+// Variations
+.badge-pill {}

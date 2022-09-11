@@ -1,0 +1,133 @@
+<!--
+
+=================================
+* Waitiyi - Admin Dashboard
+=================================
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    @@include('./_head.html', {
+    "path": ".",
+    "title": "Waitiyi - Edit Profile"
+    })
+  </head>
+
+  <body>
+    <header class="main-header w-100">
+      @@include('./_nav.html', {
+      "path": "."
+      })
+
+      @@include('./_navigation.html', {
+      "path": ".",
+      "classes": ""
+      })
+    </header>
+
+    <main>
+      <!-- Section -->
+      <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+        <div class="container-fluid section-x-margins">
+          <div class="row justify-content-center form-bg-image">
+            <div class="col-24 col-md-13 col-lg-12 col-xl-12">
+              <div class="auth-card-wrapper w-100">
+                <br />
+                <div class="card auth bg-trans w-100">
+                  <div class="form-header text-center text-md-center mb-4 mt-md-0">
+                    <!-- <img alt="Waitiyi" src="/assets/img/favicon.png" class="logo"> -->
+                    <h1 class="main-title mb-5 h3">Edit Profile</h1>
+
+                    <div class="d-flex justify-content-center">
+                      <div class="avatar-upload">
+                        <div class="avatar-edit">
+                          <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" onchange="previewFile()" />
+                          <label for="imageUpload">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_7_1753)">
+                                <path
+                                  d="M14.1116 3.46674L11.6658 1.0084C11.5042 0.847596 11.2854 0.757324 11.0574 0.757324C10.8294 0.757324 10.6107 0.847596 10.4491 1.0084L1.77827 9.66674L0.986608 13.0834C0.959298 13.2083 0.960234 13.3377 0.989348 13.4622C1.01846 13.5867 1.07502 13.7031 1.15488 13.8029C1.23475 13.9028 1.33591 13.9835 1.45097 14.0392C1.56604 14.095 1.6921 14.1243 1.81994 14.1251C1.87951 14.1311 1.93954 14.1311 1.99911 14.1251L5.45327 13.3334L14.1116 4.6834C14.2724 4.52178 14.3627 4.30306 14.3627 4.07507C14.3627 3.84708 14.2724 3.62836 14.1116 3.46674ZM5.03661 12.5834L1.79911 13.2626L2.53661 10.0876L9.02411 3.62507L11.5241 6.12507L5.03661 12.5834ZM12.0824 5.5209L9.58244 3.0209L11.0324 1.57924L13.4908 4.07924L12.0824 5.5209Z"
+                                  fill="white" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_7_1753">
+                                  <rect width="15" height="15" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </label>
+                        </div>
+                        <label for="imageUpload" class="avatar-preview">
+                          <img id="imagePreview" src="/assets/img/avatar.png" />
+                        </label>
+                      </div>
+                    </div>
+                    <div class="text-center mt-2">
+                      <p class="small">Change Picture</p>
+                    </div><!-- /.text-center END -->
+                  </div>
+                  <form action="#" class="">
+                    <div class="form-group mb-4">
+                      <label class="form-label" for="name">First Name</label>
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="" id="name" autofocus
+                          required />
+                      </div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <label class="form-label" for="lname">Last Name</label>
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="" id="lname" required />
+                      </div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <label class="form-label" for="phone_number">Phone Number</label>
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="" id="phone_number"
+                          required />
+                      </div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <label class="form-label" for="Email">Email</label>
+                      <div class="form-group">
+                        <input type="email" class="form-control form-control-lg" placeholder="" id="Email" required />
+                      </div>
+                    </div>
+                    <button type="submit" class="col-12 w-100 btn btn-primary">Update Profile</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br />
+    </main>
+
+    @@include('./_scripts.html', {
+    "path": "."
+    })
+
+    <script>
+      function previewFile() {
+        var preview = document.getElementById('imagePreview');
+        var file = document.querySelector('input[type=file]').files[0];
+        var reader = new FileReader();
+
+        reader.addEventListener("load", function () {
+          preview.src = reader.result;
+        }, false);
+
+        if (file) {
+          reader.readAsDataURL(file);
+        }
+      }
+    </script>
+
+  </body>
+
+</html>
