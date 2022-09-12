@@ -84,6 +84,16 @@
     }
   }
 
+  &-primary-plain {
+    color: #fff !important;
+    background: #CC00CC;
+    border-radius: 10px;
+
+    &:hover {
+      background: darken(#CC00CC, 10%);
+    }
+  }
+
   &-primary {
     background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
 

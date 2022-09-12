@@ -25,19 +25,26 @@
           <div class="row row-flex justify-content-between">
             <div class="col-sm-24 col-md-15 col-lg-15 d-flex align-items-stretch">
               <div class="my-4 w-100 mb-4">
-                <div class="card charts border-0 h-100 w-100 mb-3">
+                <div class="card main-hero border-0 bg-white h-100 w-100 mb-3"
+                  style="background-image: url('/assets/img/hero-main2.png'); ">
                   <div class="card-body p-0">
-                    <img class="svg" src="/assets/img/logo.png" alt="">
-                    <h4 class="balance">$658.75</h4>
-                    <h6 class="heading">Refer and earn $5 each ✨ </h6>
-                    <p class="text-card">
-                      Get rewards, gift & More
-                    </p><!-- /.text-card END -->
-                    <a href="#" class="btn btn-primary w-100 mt-1">
-                      Share Now
-                    </a>
+                    <div class="row h-100 align-items-center">
+                      <div class="col-24">
+                        <img class="svg img-fluid w-auto mb-3" src="/assets/img/logo-dark.png" alt="" />
+                        <h4 class="heading fw-700 text-black mb-1">
+                          Refer and earn $5 each ✨
+                        </h4>
+                        <p class="text-card text-black">
+                          Get rewards, gift & More
+                        </p><!-- /.text-card END -->
+                        <a href="#" class="btn btn-primary-plain rounded mt-1">
+                          Share Now
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                </div><!-- / END -->
+                  <!-- <img class="svg h-100" src="/assets/img/hero-main.png" alt="" /> -->
+                </div>
               </div>
             </div>
             <div class="col-sm-24 col-md-9 col-md-9 d-flex align-items-stretch">
@@ -57,16 +64,30 @@
           <div class="row row-flex justify-content-between">
             <div class="col-sm-24 col-md-7 col-lg-7 d-flex align-items-stretch">
               <div class="my-4 w-100">
-                <div class="card charts border-0 h-100 w-100 mb-3">
-                  <div class="card-header mb-0">
-                    <h6 class="h5 text-white fw-700 mb-3 mb-md-0">
-                      Earnings
-                    </h6>
+                <div class="card charts border-0 h-100 w-100 mb-3 p-0">
+                  <div class="card-outer-body">
+                    <div class="card-header mb-0">
+                      <h6 class="h5 text-white fw-700 mb-3 mb-md-0">
+                        Earnings
+                      </h6>
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="text-center">
+                        <p class="fw-700 text-white mb-1"> Total Earning </p>
+                        <h4 class="fw-700 text-white mb-3"> $140.00 </h4>
+
+                        <div class="badge text-bg-primary rounded-pill px-3 py-2">
+                          <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.66658 11.5L7.99992 5.5L11.3333 11.5L4.66658 11.5Z" fill="white" />
+                          </svg>
+                          4.5%
+                        </div>
+                        <!-- <br /><br /> -->
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body p-0">
-                    <br /><br />
-                    <div class="ct-chart-filter-earning1 ct-major-sixth"></div>
-                  </div>
+                  <div class="ct-chart-filter-earning1 ct-major-twelfth"></div>
                 </div><!-- / END -->
               </div>
             </div>
@@ -121,8 +142,42 @@
                     </div>
                   </div>
                   <div class="card-body p-0">
-                    <br /><br />
-                    <div class="ct-chart-filter-earning3 ct-major-sixth"></div>
+                    <div class="row">
+                      <div class="col-md border-end">
+                        <div class="small text-center">
+                          <b class="text-primary">$584k</b>
+                          <span class="text-white">Earn</span>
+                        </div><!-- /.small END -->
+                      </div><!-- /.col-md END -->
+                      <div class="col-md border-end">
+                        <div class="small text-center">
+                          <b class="text-primary">$497k</b>
+                          <span class="text-white">Spent</span>
+                        </div>
+                      </div><!-- /.col-md END -->
+                      <div class="col-md">
+                        <div class="small text-center">
+                          <b class="text-primary">3.5%</b>
+                          <span class="text-white">Earning Ratio</span>
+                        </div>
+                      </div><!-- /.col-md END -->
+                    </div><!-- /.row END -->
+                    <!-- <br /> --> <br />
+                    <div class="ct-chart-filter-earning3 ct-minor-seventh"></div>
+                    <div class="d-flex justify-content-center">
+                      <div class="me-3">
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="10" height="10" rx="5" fill="#0AB39C" />
+                        </svg>
+                        Earning
+                      </div>
+                      <div>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="10" height="10" rx="5" fill="#F06548" />
+                        </svg>
+                        Spent
+                      </div>
+                    </div><!-- /.d-flex justifty-content-center END -->
                   </div>
                 </div><!-- / END -->
               </div>
@@ -235,14 +290,17 @@
                           <div class="d-flex justify-content-end">
                             <div class="btn-group custom-radio-group" role="group" aria-label="">
                               <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
-                              <label class="btn btn-outline-success" for="btnradio1">Daily</label>
+                              <label class="btn btn-outline-success" for="btnradio1">All</label>
 
                               <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
-                              <label class="btn btn-outline-success" for="btnradio2">Weekly</label>
+                              <label class="btn btn-outline-success" for="btnradio2">1M</label>
 
+                              <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"
+                                checked />
+                              <label class="btn btn-outline-success" for="btnradio4">6M</label>
                               <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
                                 checked />
-                              <label class="btn btn-outline-success" for="btnradio3">Monthly</label>
+                              <label class="btn btn-outline-success" for="btnradio3">1Y</label>
                             </div>
                           </div>
                         </div>

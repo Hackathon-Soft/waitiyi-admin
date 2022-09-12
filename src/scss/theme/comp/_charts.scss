@@ -1,0 +1,438 @@
+ .card.charts {
+   .card-inner {
+     background: #611A98;
+     border-radius: 24px;
+     padding: 20px;
+
+     .stat-wrapper {
+       // background: rgba(255, 255, 255, 0.22);
+       // backdrop-filter: blur(30.4176px);
+       position: relative;
+       min-height: 230px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+       .svg {
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         // width: 247px;
+         // height: 100%;
+         width: 100%;
+         height: 230px;
+         z-index: 0;
+       }
+
+       .circle-wrapper {
+         width: 152px;
+         height: 152px;
+         background: #000;
+         border-radius: 50%;
+         padding: 5px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         position: relative;
+         z-index: 1;
+
+         .balance {
+           font-style: normal;
+           font-weight: 700;
+           font-size: 24px;
+           line-height: 29px;
+           color: #FFFFFF;
+         }
+
+         .heading {
+           font-style: normal;
+           font-weight: 500;
+           font-size: 16px;
+           line-height: 19px;
+           color: #E7E7E7;
+         }
+       }
+     }
+
+     // SM Chart
+     .sm-chart-wrapper {
+       background: #1C072C;
+       border-radius: 13.2273px;
+       margin-bottom: 12px;
+       padding: 10px;
+
+       .heading {
+         font-style: normal;
+         font-weight: 500;
+         font-size: 10.5818px;
+         line-height: 13px;
+         color: #FFFFFF;
+       }
+
+       .chart {}
+
+       .value {
+         font-style: normal;
+         font-weight: 600;
+         font-size: 9.69221px;
+         line-height: 12px;
+         color: #FFFFFF;
+         text-align: right;
+       }
+     }
+
+     h2 {
+       font-weight: 400;
+       color: rgba(0, 0, 0, 0.85);
+       font-size: 13px;
+       line-height: 20px;
+
+       @include media-breakpoint-up(sm) {
+         font-size: 13px;
+         line-height: 20px;
+       }
+
+       @include media-breakpoint-up(md) {
+         font-size: 14px;
+         line-height: 22px;
+       }
+
+       @include media-breakpoint-up(lg) {
+         font-size: 14px;
+         line-height: 22px;
+       }
+
+       @include media-breakpoint-up(xl) {}
+
+       @include media-breakpoint-up(xxl) {}
+     }
+
+     h3 {
+       font-weight: 600;
+       color: rgba(0, 0, 0, 0.85);
+       font-size: 24px;
+       line-height: 30px;
+
+       @include media-breakpoint-up(sm) {
+         font-size: 26px;
+         line-height: 32px;
+       }
+
+       @include media-breakpoint-up(md) {
+         font-size: 30px;
+         line-height: 34px;
+       }
+
+       @include media-breakpoint-up(lg) {
+         font-size: 34px;
+         line-height: 36px;
+       }
+
+       @include media-breakpoint-up(xl) {}
+
+       @include media-breakpoint-up(xxl) {}
+     }
+   }
+ }
+
+ // chart-subscribers 
+ .chart-subscribers {
+   .ct-series-a .ct-line {
+     stroke: #2FE9B6;
+     stroke-width: 1px;
+     stroke-dasharray: 0px 0px;
+   }
+
+   .ct-series-a .ct-point {
+     stroke: #2FE9B6;
+     stroke-width: 1px;
+     stroke-linecap: square;
+   }
+
+   .ct-series-a .ct-slice-pie,
+   .ct-series-a .ct-slice-donut-solid,
+   .ct-series-a .ct-area {
+     fill: rgba(39, 194, 148, 0.63);
+     background: linear-gradient(179.38deg, rgba(39, 194, 148, 0.63) -16.72%, rgba(31, 30, 31, 0.26) 86.31%);
+   }
+ }
+
+ // ct-chart-ranking
+ .ct-chart-ranking {
+   .ct-series-a .ct-line {
+     stroke: #5C63EB;
+     stroke-width: 1px;
+     stroke-dasharray: 0px 0px;
+   }
+
+   .ct-series-a .ct-point {
+     stroke: #5C63EB;
+     stroke-width: 1px;
+     stroke-linecap: square;
+   }
+
+   .ct-series-a .ct-slice-pie,
+   .ct-series-a .ct-slice-donut-solid,
+   .ct-series-a .ct-area {
+     fill: rgba(91, 100, 234, 0.63);
+     background: linear-gradient(179.48deg, rgba(91, 100, 234, 0.63) 0.45%, rgba(31, 30, 31, 0.26) 88.32%);
+   }
+ }
+
+ .ct-chart-calls-wrapper {
+   max-width: 200px;
+   // max-height: 180px;
+
+   .ct-chart-calls {
+     &.ct-square>svg {
+       overflow: visible !important;
+     }
+
+     .ct-label {
+       font-style: normal;
+       font-weight: 600;
+       font-size: 16px;
+       line-height: 19px;
+       color: #FFFFFF;
+       fill: #FFFFFF;
+     }
+
+     .ct-series-a path {
+       color: #2FE963;
+       fill: #2FE963;
+     }
+
+     .ct-series-b path {
+       color: #FF3358;
+       fill: #FF3358;
+     }
+
+     .ct-series-c path {
+       color: #3761F4;
+       fill: #3761F4;
+     }
+   }
+ }
+
+ .chart-top-wrapper {
+   background: #33184E;
+   padding: 20px;
+   border-right: 1px solid #110220;
+
+   .text-1-wrapper {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     h5.figure {
+       font-style: normal;
+       font-weight: 600;
+       font-size: 16.2px;
+       line-height: 24px;
+       letter-spacing: 0.2px;
+       color: #FF00FF;
+       margin-right: 7px;
+       margin-bottom: 0;
+     }
+
+     .percentage {
+       font-style: normal;
+       font-weight: 600;
+       font-size: 12px;
+       line-height: 18px;
+       color: #0AB39C;
+
+       svg {
+         width: 12.53px;
+         height: 14.89px;
+
+         path {}
+       }
+     }
+   }
+
+   h4.text-2 {
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0.2px;
+     color: #FFFFFF;
+     text-align: center;
+   }
+ }
+
+ .ct-chart-sales-value {
+   .ct-series {
+     &.ct-series-a {
+       line {
+         fill: #8D22D6;
+         stroke: #8D22D6;
+       }
+     }
+
+     &.ct-series-b {
+       line {
+         fill: #A801AC;
+         stroke: #A801AC;
+       }
+     }
+   }
+
+   .ct-labels {
+     .ct-label {
+       &.ct-vertical {
+         //  display: none;
+
+         //  &.ct-end {
+         //    display: none;
+         //  }
+       }
+     }
+
+     .ct-label {
+       font-style: normal;
+       font-weight: 400;
+       font-size: 12px;
+       line-height: 18px;
+       letter-spacing: 0.4px;
+       color: #ADB5BD;
+     }
+   }
+ }
+
+ .ct-chart-filter-earning {
+   .ct-series {
+     &.ct-series-a {
+       line {
+         fill: #8D22D6;
+         stroke: #8D22D6;
+       }
+     }
+
+     &.ct-series-b {
+       line {
+         fill: #A801AC;
+         stroke: #A801AC;
+       }
+     }
+   }
+
+   .ct-labels {
+     .ct-label {
+       font-style: normal;
+       font-weight: 400;
+       font-size: 12px;
+       line-height: 18px;
+       letter-spacing: 0.4px;
+       color: #ADB5BD;
+     }
+   }
+ }
+
+ .ct-chart-filter-earning3 {
+   .ct-labels {
+     .ct-label {
+       &.ct-vertical {
+         font-weight: 600;
+         font-size: 10px;
+         line-height: 15px;
+         letter-spacing: 0.1px;
+         color: #FFFFFF;
+       }
+
+       &.ct-horizontal {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 18px;
+         letter-spacing: 0.1px;
+         color: #ADB5BD;
+       }
+     }
+   }
+
+   .ct-line {
+     stroke-width: 2px;
+   }
+
+   .ct-series-a {
+     .ct-line {
+       //  fill: #0AB39C;
+       stroke: #0AB39C;
+     }
+
+     .ct-area {
+       // fill: rgba(10, 179, 156, 0.0588235);
+       fill: rgb(10, 179, 156);
+       stroke: none;
+       fill-opacity: 0.0588235;
+       fill-opacity: 0.1;
+     }
+   }
+
+   .ct-series-b {
+     .ct-line {
+       //  fill: #0AB39C;
+       stroke: #F06548;
+     }
+
+     .ct-area {
+       //  fill: rgba(170, 0, 170, 0.3);
+       fill: rgb(170, 0, 170);
+       stroke: none;
+       fill-opacity: 0.1;
+     }
+   }
+ }
+
+ .ct-chart-filter-earning1 {
+   svg {
+     overflow: visible;
+   }
+
+   .ct-label.ct-horizontal {
+     font-style: normal;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 17px;
+     color: #FFFFFF;
+   }
+
+   text.ct-label {
+     font-style: normal;
+     font-weight: 500;
+     font-size: 10px;
+     line-height: 12px;
+     color: #FFFFFF;
+     fill: #FFFFFF;
+   }
+
+   .ct-series-a {
+     .ct-line {
+       stroke: #8B25DA;
+     }
+
+     .ct-point {
+       fill: red;
+       stroke: #AA00AA;
+       stroke-width: 15px;
+       stroke-linecap: round;
+       filter: drop-shadow(-1px 2px 1px white) drop-shadow(1px -1px 1px white);
+     }
+
+     .ct-area {
+       fill: rgba(#AA00AA, 0.4);
+       //  background: linear-gradient(184.05deg, #AA00AA 19.84%, rgba(255, 255, 255, 0) 101.87%);
+       //  opacity: 0.2;
+     }
+   }
+
+   .ct-grid {
+     stroke: rgba(#ffff, 0.12);
+     stroke-width: 1px;
+     stroke-dasharray: 2px;
+   }
+ }

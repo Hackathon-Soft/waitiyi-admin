@@ -44,24 +44,30 @@ label {
 
 .btn-group {
   &.custom-radio-group {
+    gap: 4px;
+
     .btn.btn-outline-success {
-      color: #3C3C3C;
-      border: 1px solid #D7D7D7;
+      background: rgba(170, 0, 170, 0.5);
+      border-radius: 4px;
+      border: none;
+      color: #fff;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.2px;
 
       // &:focus,
       &:hover {
-        background: rgba($success, 0.03);
-        border: 1px solid $success;
+        background: rgba($primary, 0.03);
       }
     }
 
     input.btn-check {
       &:checked {
         +.btn.btn-outline-success {
-          background: #E7F5F4;
-          background: rgba($success, 0.07);
-          border: 1px solid $success;
-          color: $success;
+          background: rgba(64, 81, 137, 0.25);
+          color: #fff;
           box-shadow: none;
         }
       }

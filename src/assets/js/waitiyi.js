@@ -10,13 +10,13 @@
 const d = document;
 d.addEventListener("DOMContentLoaded", function (event) {
 
-  const swalWithBootstrapButtons = Swal.mixin({
-    customClass: {
-      confirmButton: 'btn btn-primary me-3 px-5',
-      cancelButton: 'btn btn-gray'
-    },
-    buttonsStyling: false
-  });
+  // const swalWithBootstrapButtons = Swal.mixin({
+  //   customClass: {
+  //     confirmButton: 'btn btn-primary me-3 px-5',
+  //     cancelButton: 'btn btn-gray'
+  //   },
+  //   buttonsStyling: false
+  // });
 
   // options
   const breakpoints = {
@@ -99,7 +99,7 @@ d.addEventListener("DOMContentLoaded", function (event) {
         // fillHoles: false
       }),
       // width: '120px',
-      height: '65px',
+      height: '60px',
       low: 0,
       onlyInteger: true,
       showArea: true,
@@ -159,7 +159,7 @@ d.addEventListener("DOMContentLoaded", function (event) {
         // fillHoles: false
       }),
       width: '120px',
-      height: '65px',
+      height: '60px',
       low: 0,
       onlyInteger: true,
       showArea: true,
@@ -198,10 +198,18 @@ d.addEventListener("DOMContentLoaded", function (event) {
       ]
     }, {
       stackBars: true,
+      axisX: {
+        showLabel: true,
+        // offset: 0,
+        position: 'end',
+      },
       axisY: {
-        labelInterpolationFnc: function (value) {
-          return (value / 1000) + 'k';
-        }
+        // labelInterpolationFnc: function (value) {
+        //   return (value / 1000) + 'k';
+        // },
+        showLabel: false,
+        offset: 0,
+        position: 'end'
       }
     }).on('draw', function (data) {
       if (data.type === 'bar') {
@@ -220,11 +228,19 @@ d.addEventListener("DOMContentLoaded", function (event) {
       ]
     }, {
       stackBars: true,
+      axisX: {
+        showLabel: true,
+        // offset: 0,
+        position: 'end',
+      },
       axisY: {
-        labelInterpolationFnc: function (value) {
-          return (value / 1000) + 'k';
-        }
-      }
+        // labelInterpolationFnc: function (value) {
+        //   return (value / 1000) + 'k';
+        // },
+        showLabel: false,
+        offset: 0,
+        position: 'end'
+      },
     }).on('draw', function (data) {
       if (data.type === 'bar') {
         data.element.attr({
@@ -233,19 +249,55 @@ d.addEventListener("DOMContentLoaded", function (event) {
       }
     });
   }
+
   if (d.querySelector('.ct-chart-filter-earning1')) {
-    new Chartist.Bar('.ct-chart-filter-earning1', {
-      labels: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    new Chartist.Line('.ct-chart-filter-earning1', {
+      labels: ['0h', '3h', '6h', '9h', '12h'],
       series: [
-        [800000, 1200000, 1400000, 1300000, 1400000, 1300000, 1400000],
+        [10, 5, 5, 2, 10],
       ]
     }, {
-      stackBars: true,
+      low: -20,
+      showArea: true,
+      showPoint: true,
+      fullWidth: true,
+      lineSmooth: Chartist.Interpolation.cardinal({
+        // fillHoles: false,
+        // divisor: 2,
+        tension: 9
+      }),
+      chartPadding: {
+        left: 10,
+        right: 10,
+      },
+      axisX: {
+        showLabel: true,
+        offset: 12,
+        position: 'end',
+        // labelInterpolationFnc: function (value) {
+        //   return (value / 1000) + 'k';
+        // }
+      },
       axisY: {
-        labelInterpolationFnc: function (value) {
-          return (value / 1000) + 'k';
-        }
-      }
+        // labelInterpolationFnc: function (value) {
+        //   return (value / 1000) + 'k';
+        // },
+        showLabel: false,
+        offset: 15,
+        position: 'end',
+        showGrid: false
+      },
+      plugins: [
+        Chartist.plugins.ctPointLabels({
+          textAnchor: 'middle',
+          labelClass: 'ct-label',
+          labelInterpolationFnc: function (value) { return '$' + value.toFixed(0) },
+          labelOffset: {
+            x: 0,
+            y: -15
+          },
+        })
+      ]
     }).on('draw', function (data) {
       if (data.type === 'bar') {
         data.element.attr({
@@ -255,26 +307,47 @@ d.addEventListener("DOMContentLoaded", function (event) {
     });
   }
   if (d.querySelector('.ct-chart-filter-earning3')) {
-    new Chartist.Bar('.ct-chart-filter-earning3', {
-      labels: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    var chart = new Chartist.Line('.ct-chart-filter-earning3', {
+      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       series: [
-        [800000, 1200000, 1400000, 1300000, 1400000, 1300000, 1400000],
+        [34000, 50500, 82000, 105000, 114000, 150300, 185000, 200050, 215000, 240050, 260000, 280030],
+        [75000, 100000, 100500, 110500, 130500, 165000, 170500, 200000, 200005, 215000, 210400, 218000],
       ]
     }, {
-      stackBars: true,
+      low: 0,
+      showArea: true,
+      showPoint: false,
+      fullWidth: true,
+      axisX: {
+        showLabel: true,
+        // offset: 0,
+        position: 'end',
+      },
       axisY: {
         labelInterpolationFnc: function (value) {
           return (value / 1000) + 'k';
-        }
-      }
-    }).on('draw', function (data) {
-      if (data.type === 'bar') {
-        data.element.attr({
-          style: 'stroke-width: 10px'
+        },
+        showLabel: true,
+        // offset: 0,
+        position: 'start'
+      },
+    });
+
+    chart.on('draw', function (data) {
+      if (data.type === 'line' || data.type === 'area') {
+        data.element.animate({
+          d: {
+            begin: 2000 * data.index,
+            dur: 2000,
+            from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+            to: data.path.clone().stringify(),
+            easing: Chartist.Svg.Easing.easeOutQuint
+          }
         });
       }
     });
   }
+
   if (d.querySelector('.ct-chart-calls')) {
     new Chartist.Pie('.ct-chart-calls',
       {

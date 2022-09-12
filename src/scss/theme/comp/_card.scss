@@ -5,6 +5,12 @@
    padding: 30px 30px;
    border: none;
 
+   &.main-hero {
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: bottom;
+   }
+
    .card-outer-body {
      padding: 30px 30px;
    }
