@@ -1,0 +1,701 @@
+<!--
+
+=================================
+* Feedify - Admin Dashboard
+=================================
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+<title>Feedify - Select Plan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Feedify - Select Plan">
+<meta name="author" content="Ayoub Khan">
+<meta name="description" content=" ">
+<meta name="keywords" content=" " />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:title" content="Feedify - Select Plan">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="">
+<meta property="twitter:title" content="Feedify - Select Plan">
+<meta property="twitter:description" content="">
+<meta property="twitter:image" content="">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- <link type="text/css" href="./assets/css/simplebar.min.css" rel="stylesheet"> -->
+
+
+<!-- Sweet Alert -->
+<link type="text/css" href="./assets/css/sweetalert2.min.css" rel="stylesheet">
+
+<!-- svgmap -->
+<link type="text/css" href="./assets/css/svgMap.min.css" rel="stylesheet">
+
+<!-- tagify -->
+<link type="text/css" href="./assets/css/tagify.css" rel="stylesheet">
+
+<!-- Notyf -->
+<link type="text/css" href="./assets/css/notyf.min.css" rel="stylesheet">
+
+<!-- Vanilla JS Datepicker -->
+<link type="text/css" href="./assets/css/datepicker.css" rel="stylesheet">
+
+<!-- Main CSS -->
+<link type="text/css" href="./css/main.css" rel="stylesheet">
+
+<link href="http://fonts.cdnfonts.com/css/avenir-lt-std" rel="stylesheet">
+<style>
+  @import url('http://fonts.cdnfonts.com/css/avenir');
+</style>
+
+<!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+  </head>
+
+  <body>
+    <header class="main-header w-100">
+      
+
+      <nav class="navbar navbar-expand-lg navbar-dark classes" aria-label="Offcanvas navbar large">
+  <div class="container-fluid px-4">
+    <button class="navbar-toggler d-lg-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z" />
+        <path
+          d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img alt="Feedify" src="./assets/img/logo.svg" class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+      aria-controls="offcanvasNavbar2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+        <path
+          d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+      aria-labelledby="offcanvasNavbar2Label">
+      <div class="offcanvas-header">
+        <a class="" href="#">
+          <img alt="Feedify" height="33" src="./assets/img/logo-dark.png" class="logo">
+        </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-none d-md-flex align-items-center">
+        <a class="btn btn-sm btn-success px-4 px-md-4 me-auto ms-0 ms-md-5" href="#">+ New Push</a>
+        <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link align-items-center dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="text-white">Support</span>
+              <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.07609 0.120378C1.26161 -0.0528482 1.5469 -0.0379064 1.71331 0.153751L5.79114 4.85032L9.86897 0.153751C10.0354 -0.0379064 10.3207 -0.0528482 10.5062 0.120378C10.6917 0.293604 10.7072 0.5894 10.5408 0.781058L6.14301 5.84612C6.0501 5.95314 5.92012 6.00506 5.79114 5.99989C5.66216 6.00506 5.53218 5.95314 5.43926 5.84612L1.04149 0.781058C0.875079 0.5894 0.890571 0.293604 1.07609 0.120378Z"
+                  fill="white" fill-opacity="0.85" />
+              </svg>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">FAQs</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Privacy</a></li>
+              <li><a class="dropdown-item" href="#">Terms</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-black notification-bell unread dropdown-toggle" data-unread-notifications="true"
+              href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.3446 17.5077C17.2799 17.4658 16.7932 17.1248 16.3059 16.0933C15.4109 14.1992 15.223 11.5309 15.223 9.62607C15.223 9.61778 15.2228 9.60957 15.2225 9.60132C15.2128 7.08383 13.7053 4.91365 11.5481 3.93993V2.45077C11.5481 1.0994 10.4505 0 9.10139 0H8.89862C7.54948 0 6.45189 1.0994 6.45189 2.45077V3.93985C4.28747 4.9167 2.77699 7.09796 2.77699 9.62607C2.77699 11.5309 2.58913 14.1992 1.69413 16.0933C1.20682 17.1248 0.720116 17.4657 0.655405 17.5077C0.382897 17.6339 0.248534 17.9252 0.311225 18.2204C0.374518 18.5186 0.653213 18.7241 0.957561 18.7241H5.68185C5.70823 20.5349 7.1861 22 9.00002 22C10.8139 22 12.2918 20.5349 12.3182 18.7241H17.0425C17.3468 18.7241 17.6255 18.5186 17.6888 18.2204C17.7514 17.9252 17.6171 17.6338 17.3446 17.5077V17.5077ZM7.74099 2.45077C7.74099 1.81135 8.26031 1.29117 8.89866 1.29117H9.10143C9.73977 1.29117 10.2591 1.81135 10.2591 2.45077V3.52142C9.85226 3.43733 9.43113 3.39307 8.99985 3.39307C8.5687 3.39307 8.14769 3.43729 7.74104 3.52129V2.45077H7.74099ZM9.00002 20.7088C7.89688 20.7088 6.99708 19.8229 6.97091 18.7242H11.0291C11.003 19.8229 10.1032 20.7088 9.00002 20.7088V20.7088ZM11.5953 17.4329C11.5952 17.4329 2.42645 17.4329 2.42645 17.4329C2.53795 17.2592 2.65143 17.0624 2.76422 16.8401C3.62807 15.1366 4.06609 12.7095 4.06609 9.62607C4.06609 6.90112 6.27937 4.68424 8.99981 4.68424C11.7202 4.68424 13.9335 6.90112 13.9335 9.62822C13.9335 9.63617 13.9336 9.64408 13.934 9.65198C13.9364 12.723 14.3744 15.1415 15.2358 16.8401C15.3486 17.0625 15.4621 17.2592 15.5736 17.4329H11.5953Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end mt-2 py-0">
+              <div class="list-group list-group-flush">
+                <a href="#" class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+                <a href="#" class="list-group-item list-group-item-action border-bottom">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <img alt="Image placeholder" src="./assets/img/team/profile-picture-1.jpg"
+                        class="avatar-md rounded">
+                    </div>
+                    <div class="col ps-0 ms-2">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h4 class="h6 mb-0 text-small">Jose Leos</h4>
+                        </div>
+                        <div class="text-end">
+                          <small class="text-danger">a few moments ago</small>
+                        </div>
+                      </div>
+                      <p class="font-small mt-1 mb-0">Added you to an event "Project stand-up" tomorrow at 12:30 AM.</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action border-bottom">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <img alt="Image placeholder" src="./assets/img/team/profile-picture-2.jpg"
+                        class="avatar-md rounded">
+                    </div>
+                    <div class="col ps-0 ms-2">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h4 class="h6 mb-0 text-small">Neil Sims</h4>
+                        </div>
+                        <div class="text-end">
+                          <small class="text-danger">2 hrs ago</small>
+                        </div>
+                      </div>
+                      <p class="font-small mt-1 mb-0">You've been assigned a task for "Awesome new project".</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action border-bottom">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <img alt="Image placeholder" src="./assets/img/team/profile-picture-3.jpg"
+                        class="avatar-md rounded">
+                    </div>
+                    <div class="col ps-0 m-2">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h4 class="h6 mb-0 text-small">Roberta Casas</h4>
+                        </div>
+                        <div class="text-end">
+                          <small>5 hrs ago</small>
+                        </div>
+                      </div>
+                      <p class="font-small mt-1 mb-0">Tagged you in a document called "Financial plans",</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action border-bottom">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <img alt="Image placeholder" src="./assets/img/team/profile-picture-4.jpg"
+                        class="avatar-md rounded">
+                    </div>
+                    <div class="col ps-0 ms-2">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h4 class="h6 mb-0 text-small">Joseph Garth</h4>
+                        </div>
+                        <div class="text-end">
+                          <small>1 d ago</small>
+                        </div>
+                      </div>
+                      <p class="font-small mt-1 mb-0">New message: "Hey, what's up? All set for the presentation?"</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action border-bottom">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <img alt="Image placeholder" src="./assets/img/team/profile-picture-5.jpg"
+                        class="avatar-md rounded">
+                    </div>
+                    <div class="col ps-0 ms-2">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                          <h4 class="h6 mb-0 text-small">Bonnie Green</h4>
+                        </div>
+                        <div class="text-end">
+                          <small>2 hrs ago</small>
+                        </div>
+                      </div>
+                      <p class="font-small mt-1 mb-0">New message: "We need to improve the UI/UX for the landing page."
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
+                  <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                    <path fill-rule="evenodd"
+                      d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  View all
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown ms-lg-3">
+            <a class="nav-link dropdown-toggle pt-1 px-0" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="media d-flex align-items-center">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 22C8.39545 22 5.86927 21.0734 3.88682 19.3909C3.42134 18.9961 2.9847 18.5584 2.58913 18.09C0.919402 16.1109 0 13.593 0 11C0 8.06175 1.14417 5.29942 3.2218 3.2218C5.29942 1.14417 8.06175 0 11 0C13.9382 0 16.7006 1.14417 18.7782 3.2218C20.8558 5.29942 22 8.06175 22 11C22 13.5931 21.0806 16.1109 19.4111 18.0898C19.0153 18.5584 18.5787 18.9961 18.113 19.391C16.1307 21.0734 13.6046 22 11 22ZM11 1.375C5.69276 1.375 1.375 5.69276 1.375 11C1.375 13.269 2.17933 15.4719 3.63984 17.2031C3.98617 17.6131 4.36863 17.9966 4.77641 18.3425C6.5108 19.8144 8.72098 20.625 11 20.625C13.279 20.625 15.4892 19.8144 17.2235 18.3425C17.6314 17.9966 18.0138 17.6131 18.3604 17.2028C19.8207 15.472 20.625 13.269 20.625 11C20.625 5.69276 16.3072 1.375 11 1.375Z"
+                    fill="white" />
+                  <path
+                    d="M11 11C8.72545 11 6.875 9.14955 6.875 6.875C6.875 4.60045 8.72545 2.75 11 2.75C13.2746 2.75 15.125 4.60045 15.125 6.875C15.125 9.14955 13.2746 11 11 11ZM11 4.125C9.48363 4.125 8.25 5.35863 8.25 6.875C8.25 8.39137 9.48363 9.625 11 9.625C12.5164 9.625 13.75 8.39137 13.75 6.875C13.75 5.35863 12.5164 4.125 11 4.125Z"
+                    fill="white" />
+                  <path
+                    d="M17.6688 19.5544C17.6134 19.5544 17.5571 19.5476 17.5009 19.5336C17.1327 19.4411 16.9091 19.0676 17.0015 18.6994C17.1249 18.2077 17.1875 17.699 17.1875 17.1875C17.1875 13.8237 14.4527 11.0487 11.0905 11.0004L11 11L10.9095 11.0004C7.54729 11.0487 4.8125 13.8237 4.8125 17.1875C4.8125 17.699 4.87511 18.2077 4.99851 18.6994C5.09094 19.0676 4.86733 19.4411 4.49909 19.5336C4.13084 19.626 3.75732 19.4024 3.66489 19.0341C3.51398 18.433 3.4375 17.8118 3.4375 17.1875C3.4375 15.1861 4.21167 13.2996 5.61739 11.8753C7.02174 10.4524 8.89526 9.65345 10.8928 9.62552C10.8961 9.62547 10.8992 9.62547 10.9025 9.62547L11 9.625L11.0975 9.62543C11.1008 9.62543 11.1039 9.62543 11.1072 9.62547C13.1047 9.65336 14.9783 10.4524 16.3826 11.8752C17.7883 13.2996 18.5625 15.1861 18.5625 17.1875C18.5625 17.8118 18.486 18.433 18.3351 19.0341C18.2568 19.3462 17.9766 19.5543 17.6688 19.5544Z"
+                    fill="white" />
+                </svg>
+
+                <div class="media-body ms-2 text-black align-items-center d-none d-lg-block">
+                  <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M1.07609 0.120378C1.26161 -0.0528482 1.5469 -0.0379064 1.71331 0.153751L5.79114 4.85032L9.86897 0.153751C10.0354 -0.0379064 10.3207 -0.0528482 10.5062 0.120378C10.6917 0.293604 10.7072 0.5894 10.5408 0.781058L6.14301 5.84612C6.0501 5.95314 5.92012 6.00506 5.79114 5.99989C5.66216 6.00506 5.53218 5.95314 5.43926 5.84612L1.04149 0.781058C0.875079 0.5894 0.890571 0.293604 1.07609 0.120378Z"
+                      fill="white" fill-opacity="0.85" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                My Profile
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Settings
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Messages
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Support
+              </a>
+              <div role="separator" class="dropdown-divider my-1"></div>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <svg class="dropdown-icon text-danger me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                  </path>
+                </svg>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="flex-shrink-0 p-3 bg-white d-block d-md-none">
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle btn-white w-100 d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                Support
+              </button>
+              <div class="collapse" id="dashboard-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal my-3 small">
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">FAQs</a></li>
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Contact</a></li>
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Privacy</a></li>
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Terms</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+              <button class="btn btn-toggle btn-white w-100 d-inline-flex align-items-center rounded border-0 collapsed"
+                data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                Account
+              </button>
+              <div class="collapse" id="account-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal my-3 small">
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
+                  <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-block d-md-none">
+      <div class="btn-group">
+        <a class="nav-link text-black notification-bell unread dropdown-toggle" data-unread-notifications="true"
+          href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.3446 17.5077C17.2799 17.4658 16.7932 17.1248 16.3059 16.0933C15.4109 14.1992 15.223 11.5309 15.223 9.62607C15.223 9.61778 15.2228 9.60957 15.2225 9.60132C15.2128 7.08383 13.7053 4.91365 11.5481 3.93993V2.45077C11.5481 1.0994 10.4505 0 9.10139 0H8.89862C7.54948 0 6.45189 1.0994 6.45189 2.45077V3.93985C4.28747 4.9167 2.77699 7.09796 2.77699 9.62607C2.77699 11.5309 2.58913 14.1992 1.69413 16.0933C1.20682 17.1248 0.720116 17.4657 0.655405 17.5077C0.382897 17.6339 0.248534 17.9252 0.311225 18.2204C0.374518 18.5186 0.653213 18.7241 0.957561 18.7241H5.68185C5.70823 20.5349 7.1861 22 9.00002 22C10.8139 22 12.2918 20.5349 12.3182 18.7241H17.0425C17.3468 18.7241 17.6255 18.5186 17.6888 18.2204C17.7514 17.9252 17.6171 17.6338 17.3446 17.5077V17.5077ZM7.74099 2.45077C7.74099 1.81135 8.26031 1.29117 8.89866 1.29117H9.10143C9.73977 1.29117 10.2591 1.81135 10.2591 2.45077V3.52142C9.85226 3.43733 9.43113 3.39307 8.99985 3.39307C8.5687 3.39307 8.14769 3.43729 7.74104 3.52129V2.45077H7.74099ZM9.00002 20.7088C7.89688 20.7088 6.99708 19.8229 6.97091 18.7242H11.0291C11.003 19.8229 10.1032 20.7088 9.00002 20.7088V20.7088ZM11.5953 17.4329C11.5952 17.4329 2.42645 17.4329 2.42645 17.4329C2.53795 17.2592 2.65143 17.0624 2.76422 16.8401C3.62807 15.1366 4.06609 12.7095 4.06609 9.62607C4.06609 6.90112 6.27937 4.68424 8.99981 4.68424C11.7202 4.68424 13.9335 6.90112 13.9335 9.62822C13.9335 9.63617 13.9336 9.64408 13.934 9.65198C13.9364 12.723 14.3744 15.1415 15.2358 16.8401C15.3486 17.0625 15.4621 17.2592 15.5736 17.4329H11.5953Z"
+              fill="white" />
+          </svg>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end mt-2 py-0">
+          <div class="list-group list-group-flush">
+            <a href="#" class="text-center text-primary fw-bold border-bottom border-light py-3">Notifications</a>
+            <a href="#" class="list-group-item list-group-item-action border-bottom">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img alt="Image placeholder" src="./assets/img/team/profile-picture-1.jpg"
+                    class="avatar-md rounded">
+                </div>
+                <div class="col ps-0 ms-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h4 class="h6 mb-0 text-small">Jose Leos</h4>
+                    </div>
+                    <div class="text-end">
+                      <small class="text-danger">a few moments ago</small>
+                    </div>
+                  </div>
+                  <p class="font-small mt-1 mb-0">Added you to an event "Project stand-up" tomorrow at 12:30 AM.</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action border-bottom">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img alt="Image placeholder" src="./assets/img/team/profile-picture-2.jpg"
+                    class="avatar-md rounded">
+                </div>
+                <div class="col ps-0 ms-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h4 class="h6 mb-0 text-small">Neil Sims</h4>
+                    </div>
+                    <div class="text-end">
+                      <small class="text-danger">2 hrs ago</small>
+                    </div>
+                  </div>
+                  <p class="font-small mt-1 mb-0">You've been assigned a task for "Awesome new project".</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action border-bottom">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img alt="Image placeholder" src="./assets/img/team/profile-picture-3.jpg"
+                    class="avatar-md rounded">
+                </div>
+                <div class="col ps-0 m-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h4 class="h6 mb-0 text-small">Roberta Casas</h4>
+                    </div>
+                    <div class="text-end">
+                      <small>5 hrs ago</small>
+                    </div>
+                  </div>
+                  <p class="font-small mt-1 mb-0">Tagged you in a document called "Financial plans",</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action border-bottom">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img alt="Image placeholder" src="./assets/img/team/profile-picture-4.jpg"
+                    class="avatar-md rounded">
+                </div>
+                <div class="col ps-0 ms-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h4 class="h6 mb-0 text-small">Joseph Garth</h4>
+                    </div>
+                    <div class="text-end">
+                      <small>1 d ago</small>
+                    </div>
+                  </div>
+                  <p class="font-small mt-1 mb-0">New message: "Hey, what's up? All set for the presentation?"</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action border-bottom">
+              <div class="row align-items-center">
+                <div class="col-auto">
+                  <img alt="Image placeholder" src="./assets/img/team/profile-picture-5.jpg"
+                    class="avatar-md rounded">
+                </div>
+                <div class="col ps-0 ms-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h4 class="h6 mb-0 text-small">Bonnie Green</h4>
+                    </div>
+                    <div class="text-end">
+                      <small>2 hrs ago</small>
+                    </div>
+                  </div>
+                  <p class="font-small mt-1 mb-0">New message: "We need to improve the UI/UX for the landing page."
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item text-center fw-bold rounded-bottom py-3">
+              <svg class="icon icon-xxs text-gray-400 me-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                <path fill-rule="evenodd"
+                  d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              View all
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group">
+        <a class="btn btn-sm btn-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <div class="media d-flex align-items-center">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 22C8.39545 22 5.86927 21.0734 3.88682 19.3909C3.42134 18.9961 2.9847 18.5584 2.58913 18.09C0.919402 16.1109 0 13.593 0 11C0 8.06175 1.14417 5.29942 3.2218 3.2218C5.29942 1.14417 8.06175 0 11 0C13.9382 0 16.7006 1.14417 18.7782 3.2218C20.8558 5.29942 22 8.06175 22 11C22 13.5931 21.0806 16.1109 19.4111 18.0898C19.0153 18.5584 18.5787 18.9961 18.113 19.391C16.1307 21.0734 13.6046 22 11 22ZM11 1.375C5.69276 1.375 1.375 5.69276 1.375 11C1.375 13.269 2.17933 15.4719 3.63984 17.2031C3.98617 17.6131 4.36863 17.9966 4.77641 18.3425C6.5108 19.8144 8.72098 20.625 11 20.625C13.279 20.625 15.4892 19.8144 17.2235 18.3425C17.6314 17.9966 18.0138 17.6131 18.3604 17.2028C19.8207 15.472 20.625 13.269 20.625 11C20.625 5.69276 16.3072 1.375 11 1.375Z"
+                fill="white" />
+              <path
+                d="M11 11C8.72545 11 6.875 9.14955 6.875 6.875C6.875 4.60045 8.72545 2.75 11 2.75C13.2746 2.75 15.125 4.60045 15.125 6.875C15.125 9.14955 13.2746 11 11 11ZM11 4.125C9.48363 4.125 8.25 5.35863 8.25 6.875C8.25 8.39137 9.48363 9.625 11 9.625C12.5164 9.625 13.75 8.39137 13.75 6.875C13.75 5.35863 12.5164 4.125 11 4.125Z"
+                fill="white" />
+              <path
+                d="M17.6688 19.5544C17.6134 19.5544 17.5571 19.5476 17.5009 19.5336C17.1327 19.4411 16.9091 19.0676 17.0015 18.6994C17.1249 18.2077 17.1875 17.699 17.1875 17.1875C17.1875 13.8237 14.4527 11.0487 11.0905 11.0004L11 11L10.9095 11.0004C7.54729 11.0487 4.8125 13.8237 4.8125 17.1875C4.8125 17.699 4.87511 18.2077 4.99851 18.6994C5.09094 19.0676 4.86733 19.4411 4.49909 19.5336C4.13084 19.626 3.75732 19.4024 3.66489 19.0341C3.51398 18.433 3.4375 17.8118 3.4375 17.1875C3.4375 15.1861 4.21167 13.2996 5.61739 11.8753C7.02174 10.4524 8.89526 9.65345 10.8928 9.62552C10.8961 9.62547 10.8992 9.62547 10.9025 9.62547L11 9.625L11.0975 9.62543C11.1008 9.62543 11.1039 9.62543 11.1072 9.62547C13.1047 9.65336 14.9783 10.4524 16.3826 11.8752C17.7883 13.2996 18.5625 15.1861 18.5625 17.1875C18.5625 17.8118 18.486 18.433 18.3351 19.0341C18.2568 19.3462 17.9766 19.5543 17.6688 19.5544Z"
+                fill="white" />
+            </svg>
+            <div class="media-body ms-2 text-black align-items-center d-none d-lg-block">
+              <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.07609 0.120378C1.26161 -0.0528482 1.5469 -0.0379064 1.71331 0.153751L5.79114 4.85032L9.86897 0.153751C10.0354 -0.0379064 10.3207 -0.0528482 10.5062 0.120378C10.6917 0.293604 10.7072 0.5894 10.5408 0.781058L6.14301 5.84612C6.0501 5.95314 5.92012 6.00506 5.79114 5.99989C5.66216 6.00506 5.53218 5.95314 5.43926 5.84612L1.04149 0.781058C0.875079 0.5894 0.890571 0.293604 1.07609 0.120378Z"
+                  fill="white" fill-opacity="0.85" />
+              </svg>
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+          <a class="dropdown-item d-flex align-items-center" href="#">
+            <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                clip-rule="evenodd"></path>
+            </svg>
+            My Profile
+          </a>
+          <a class="dropdown-item d-flex align-items-center" href="#">
+            <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Settings
+          </a>
+          <a class="dropdown-item d-flex align-items-center" href="#">
+            <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1 2H8l-1-2H5V5z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Messages
+          </a>
+          <a class="dropdown-item d-flex align-items-center" href="#">
+            <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+            Support
+          </a>
+          <div role="separator" class="dropdown-divider my-1"></div>
+          <a class="dropdown-item d-flex align-items-center" href="#">
+            <svg class="dropdown-icon text-danger me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+              </path>
+            </svg>
+            Logout
+          </a>
+        </div>
+      </div>
+    </div><!-- / END -->
+  </div>
+</nav>
+    </header>
+
+    <main>
+
+      <!-- Section -->
+      <section class="vh-lg-100 mt-5 mt-lg-0 bg-soft d-flex align-items-center">
+        <div class="container">
+          <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+              <div class="p-4 p-lg-5 w-100">
+                <!-- // TOP  -->
+                <div class="d-flex align-items-center justify-content-center">
+                  <div class="d-flex align-items-center">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="11" cy="11" r="11" fill="#0EA980" />
+                      <g style="mix-blend-mode:luminosity">
+                        <path
+                          d="M11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15Z"
+                          fill="#F5FBFA" />
+                      </g>
+                    </svg>
+
+                    <span class="ps-2">Add Site Logo </span>
+                  </div>
+                  <div class="">
+                    &nbsp;&nbsp;&nbsp;
+                    -----------<span class="d-none d-md-inline">----------</span>-------
+                    &nbsp;&nbsp;&nbsp;
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="#DDDDDD" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.7696 21.5393C16.7175 21.5393 21.5393 16.7175 21.5393 10.7696C21.5393 4.82173 16.7175 0 10.7696 0C4.82173 0 0 4.82173 0 10.7696C0 16.7175 4.82173 21.5393 10.7696 21.5393Z"
+                        fill="#DDDDDD" />
+                      <g style="mix-blend-mode:luminosity">
+                        <path
+                          d="M8.4547 13.3576L5.66716 10.5701L4.73828 11.499L8.4547 15.2154L16.418 7.25212L15.4882 6.32324L8.4547 13.3576Z"
+                          fill="white" />
+                      </g>
+                    </svg>
+
+                    <span class="text-gray ps-2">Select Plan</span>
+                  </div>
+                </div><!-- /.d-flex END -->
+
+                <br /><br />
+
+                <h2 class="h3 text-center">Upload your Site Logo</h2>
+
+                <br />
+                <div class="row justify-content-center">
+                  <div class="col-xl-8 col-lg-8 col-md-16 col-sm-9 col-11">
+                    <div class="add-logo-wrapper bg-white p-5">
+                      <br /><br />
+                      <label for="formFile" class="form-label w-100">
+                        <div class="mb-3">
+                          <input class="d-none form-control form-control-sm form-file" type="file" id="formFile">
+
+                          <div class="text-center">
+                            <div class="mx-auto mb-4">
+                              <img class="img-fluid" alt="logo" src="../../assets/img/icons/img.png" />
+                            </div>
+                            <label for="formFile" class="btn btn-success text-white fw-500 mb-4">
+                              Choose Image
+                            </label>
+
+                            <p>
+                              <small>Recommended size: 192px x 192px (JPG, PNG, GIF up to 1 MB)</small>
+                            </p>
+                          </div>
+                        </div>
+                      </label>
+                      <br /><br />
+                    </div>
+                  </div><!-- /.col END -->
+                </div><!-- /.row END -->
+
+                <br /><br />
+                <!-- // bottom buttons  -->
+                <div class="d-flex justify-content-center">
+                  <a href="/select-plan.html" class="btn m-2 btn-white px-3 border">
+                    I will do it later
+                  </a>
+                  <a href="/select-plan.html" class="btn m-2 btn-success px-5 text-white">
+                    Next
+                  </a>
+                </div><!-- /.d-flex END -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Core -->
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<!-- Vendor JS -->
+<!-- <script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script> -->
+<!-- <script src="./assets/js/simplebar.min.js"></script> -->
+<!-- <script src="//cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script> -->
+
+<!-- Vendor JS -->
+<!-- <script src="./vendor/svgmap/dist/svgMap.min.js"></script> -->
+<!-- <script src="./assets/js/coutriesData.js"></script>
+<script src="./assets/js/countriesDE.js"></script> -->
+
+<!-- Charts -->
+<script src="./assets/js/chartist.min.js"></script>
+<script src="./assets/js/chartist-plugin-tooltip.min.js"></script>
+
+<!-- Sweet Alerts 2 -->
+<script src="./assets/js/sweetalert2.all.min.js"></script>
+
+<!-- Moment JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+
+<!-- Vanilla JS Datepicker -->
+<script src="./assets/js/datepicker.min.js"></script>
+
+<!-- datepicker-full.min.js -->
+<script src="./assets/js/datepicker-full.min.js"></script>
+
+<!-- tagify -->
+<script src="./assets/js/tagify.min.js"></script>
+
+<!-- Notyf -->
+<script src="./assets/js/notyf.min.js"></script>
+
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- Feedify  JS -->
+<script src="./assets/js/feedify.js"></script>
+
+  </body>
+
+</html>
