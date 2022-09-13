@@ -31,31 +31,31 @@
       </div>
       <div class="offcanvas-body d-none d-md-flex align-items-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link active @@if (context.page_group !== 'intensives') {  }" href="/" role="button">
+          <li class="nav-item">
+            <a class="nav-link @@if (context.page_group === 'home') { active }" href="/" role="button">
               Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="/pages/contactus.html"
+            <a class="nav-link @@if (context.page_group === 'toptup') { active }" href="add-new-top-up.html"
               role="button">
               Top up
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link @@if (context.page_group !== 'intensives') {  }" href="/pages/about-us.html"
+            <a class="nav-link @@if (context.page_group === 'call_history') { active }" href="call-history.html"
               role="button">
               Call History
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link @@if (context.page_group !== 'page_examples') {  }" href="#" role="button"
-              aria-expanded="false">
+            <a class="nav-link @@if (context.page_group === 'transiction') { active }" href="transiction-history.html"
+              role="button" aria-expanded="false">
               Transaction History
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+            <a class="nav-link @@if (context.page === 'referals') { active }" href="#">
               Referals
             </a>
           </li>
