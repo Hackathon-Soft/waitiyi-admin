@@ -53,6 +53,12 @@
     padding: $padding-xxs;
     font-size: $fs-xxs;
 
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      padding: $padding-xs;
+      font-size: $fs-xxs;
+    }
+
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
       padding: $padding-xs;

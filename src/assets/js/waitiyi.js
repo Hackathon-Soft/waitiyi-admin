@@ -158,7 +158,7 @@ d.addEventListener("DOMContentLoaded", function (event) {
         tension: 1.0,
         // fillHoles: false
       }),
-      width: '120px',
+      // width: '120px',
       height: '60px',
       low: 0,
       onlyInteger: true,

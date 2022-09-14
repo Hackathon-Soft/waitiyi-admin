@@ -137,9 +137,9 @@ gulp.task('minify:css', function () {
 // Minify Html
 gulp.task('minify:html', function () {
   return gulp.src([paths.dist.html + '/**/*.html'])
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
+    // .pipe(htmlmin({
+    //   collapseWhitespace: true
+    // }))
     .pipe(fileinclude({
       prefix: '@@',
       basepath: './src/partials/',

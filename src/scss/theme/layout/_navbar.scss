@@ -290,9 +290,6 @@
     // right: 15px;
     z-index: 1050;
     overflow-y: auto;
-    // using !important to overwrite Bootstrap's inline styles
-    // height: calc(80vh - 30px) !important;
-    opacity: 0;
 
     .navbar-toggler {
       position: relative;

@@ -6,6 +6,11 @@ body {
   font-weight: 500;
   font-size: $fs-xs;
 
+  // Extra Small devices (landscape phones, 376px and up)
+  @include media-breakpoint-up(xs) {
+    font-size: $fs-sm;
+  }
+
   // Small devices (landscape phones, 576px and up)
   @include media-breakpoint-up(sm) {
     font-size: $fs-sm;
@@ -247,6 +252,12 @@ article {
     font-size: 12px;
     line-height: 16px;
 
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
       font-size: 12px;
@@ -275,6 +286,12 @@ article {
   &-xs {
     font-size: 12px;
     line-height: 16px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 12px;
+      line-height: 16px;
+    }
 
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
@@ -305,6 +322,12 @@ article {
     font-size: 12px;
     line-height: 16px;
 
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
       font-size: 12px;
@@ -333,6 +356,12 @@ article {
   &-md {
     font-size: 12px;
     line-height: 16px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 12px;
+      line-height: 16px;
+    }
 
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
@@ -363,6 +392,12 @@ article {
     font-size: 12px;
     line-height: 16px;
 
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
       font-size: 12px;
@@ -391,6 +426,12 @@ article {
   &-xl {
     font-size: 12px;
     line-height: 16px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      font-size: 12px;
+      line-height: 16px;
+    }
 
     // Small devices (landscape phones, 576px and up)
     @include media-breakpoint-up(sm) {
