@@ -14,10 +14,9 @@
   max-width: 230px;
   position: absolute;
   cursor: pointer;
-  filter: alpha(opacity=0
-  );
-opacity: 0;
-padding-bottom: 30px;
+  // filter: alpha(opacity=0);
+  opacity: 0;
+  padding-bottom: 30px;
 }
 
 .file-field svg {

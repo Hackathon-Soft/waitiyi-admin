@@ -1,6 +1,7 @@
 .form-control,
 .form-select {
-
+  -webkit-appearance: auto;
+  appearance: auto;
   padding: $padding-xs;
   font-size: $fs-xs;
 

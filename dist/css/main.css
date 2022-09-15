@@ -12104,65 +12104,60 @@ textarea.form-control-lg {
   .navbar-main .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); }
 
-.navbar .navbar-nav .nav-link {
-  font-style: normal;
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px; }
-  .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
-    color: #FF00FF; }
-    .navbar .navbar-nav .nav-link:hover img, .navbar .navbar-nav .nav-link.active img {
-      opacity: inherit; }
-  .navbar .navbar-nav .nav-link span {
-    position: relative; }
-  @media (max-width: 767.98px) {
-    .navbar .navbar-nav .nav-link {
-      font-size: 1.2rem;
-      display: flex;
-      -moz-justify-content: space-between;
-      -ms-justify-content: space-between;
-      justify-content: space-between;
-      -ms-flex-pack: space-between;
-      -moz-align-items: center;
-      -ms-align-items: center;
-      align-items: center; } }
-
-.navbar .navbar-nav .nav-item .media:not(:last-child) {
-  margin-bottom: 1.5rem; }
-
-.navbar .navbar-nav .nav-item:focus,
-.navbar .navbar-nav .nav-item .nav-link:focus {
-  outline: none !important; }
-
-.navbar .navbar-nav .dropdown .dropdown-menu {
-  top: 100%; }
-  .navbar .navbar-nav .dropdown .dropdown-menu span {
-    width: 30px; }
-
-.navbar .navbar-nav .dropdown .dropdown-item {
-  font-size: 0.875rem; }
-
-.navbar .navbar-nav .nav-item {
-  height: 40px; }
-
-.navbar .navbar-nav .avatar {
-  width: 40px;
-  height: 40px; }
-
-.navbar .navbar-nav .btn-nav {
-  color: #fff;
-  background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
-  border-radius: 30px;
-  height: 40px;
-  padding: 1px 4px;
-  padding-right: 25px; }
-  .navbar .navbar-nav .btn-nav svg {
-    margin-right: 10px; }
-  .navbar .navbar-nav .btn-nav:hover, .navbar .navbar-nav .btn-nav:focus, .navbar .navbar-nav .btn-nav:active {
+.navbar .navbar-nav {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif; }
+  .navbar .navbar-nav .nav-link {
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px; }
+    .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
+      color: #FF00FF; }
+      .navbar .navbar-nav .nav-link:hover img, .navbar .navbar-nav .nav-link.active img {
+        opacity: inherit; }
+    .navbar .navbar-nav .nav-link span {
+      position: relative; }
+    @media (max-width: 767.98px) {
+      .navbar .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        display: flex;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: space-between;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        align-items: center; } }
+  .navbar .navbar-nav .nav-item .media:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .navbar .navbar-nav .nav-item:focus,
+  .navbar .navbar-nav .nav-item .nav-link:focus {
+    outline: none !important; }
+  .navbar .navbar-nav .dropdown .dropdown-menu {
+    top: 100%; }
+    .navbar .navbar-nav .dropdown .dropdown-menu span {
+      width: 30px; }
+  .navbar .navbar-nav .dropdown .dropdown-item {
+    font-size: 0.875rem; }
+  .navbar .navbar-nav .nav-item {
+    height: 40px; }
+  .navbar .navbar-nav .avatar {
+    width: 40px;
+    height: 40px; }
+  .navbar .navbar-nav .btn-nav {
     color: #fff;
     background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
-    border-radius: 30px; }
+    border-radius: 30px;
+    height: 40px;
+    padding: 1px 4px;
+    padding-right: 25px; }
+    .navbar .navbar-nav .btn-nav svg {
+      margin-right: 10px; }
+    .navbar .navbar-nav .btn-nav:hover, .navbar .navbar-nav .btn-nav:focus, .navbar .navbar-nav .btn-nav:active {
+      color: #fff;
+      background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
+      border-radius: 30px; }
 
 .navbar-brand {
   font-size: 0.75rem;
@@ -12395,6 +12390,8 @@ textarea.form-control-lg {
  */
 .form-control,
 .form-select {
+  -webkit-appearance: auto;
+  appearance: auto;
   padding: 0.25rem 1rem;
   font-size: 13px;
   border: none;
@@ -12485,6 +12482,22 @@ select:-webkit-autofill:focus {
 .form-switch .form-check-input {
   height: 1.275em; }
 
+.form-check.custom {
+  display: flex;
+  align-items: flex-start; }
+  .form-check.custom .form-check-input {
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    flex-basis: 46px;
+    margin-right: 10px; }
+    .form-check.custom .form-check-input:checked[type="checkbox"] {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center center; }
+
 .input-group .form-control {
   padding: 0.25rem 1rem;
   font-size: 13px; }
@@ -12527,7 +12540,6 @@ select:-webkit-autofill:focus {
   max-width: 230px;
   position: absolute;
   cursor: pointer;
-  filter: alpha(opacity=0);
   opacity: 0;
   padding-bottom: 30px; }
 
@@ -12550,6 +12562,7 @@ select:-webkit-autofill:focus {
 label:not(.form-check-label),
 .form-label,
 label {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #3C3C3C;
@@ -12773,6 +12786,7 @@ h1, .h1,
 * = Buttons
 */
 .btn {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
   border-radius: 30px;
   font-weight: 500;
   padding: 0.25rem 1rem;
@@ -14714,6 +14728,9 @@ a,
 
 .fw-900 {
   font-weight: 900 !important; }
+
+.font-2 {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif; }
 
 .font-small {
   font-size: 0.75rem;
