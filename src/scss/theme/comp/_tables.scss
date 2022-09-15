@@ -86,6 +86,7 @@ table {
 
     th,
     td {
+      vertical-align: middle;
       padding: 0;
     }
   }
@@ -635,6 +636,125 @@ table.transiction-history {
 }
 
 table.refferals {
+  tr {
+    display: block;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      display: block;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      display: table-row;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      display: table-row;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      display: table-row;
+    }
+  }
+
+  td,
+  th {
+    display: inline-block;
+
+    &:first-of-type {
+      display: block;
+    }
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      display: inline-block;
+
+      &:first-of-type {
+        display: block;
+      }
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      display: inline-block;
+
+      &:first-of-type {
+        display: block;
+      }
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      display: table-cell;
+
+      &:first-of-type {
+        display: table-cell;
+      }
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      display: table-cell;
+
+      &:first-of-type {
+        display: table-cell;
+      }
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      display: table-cell;
+
+      &:first-of-type {
+        display: table-cell;
+      }
+    }
+  }
+
+  tr {
+    border-radius: 5px;
+    border: 1px solid $secondary;
+    margin-bottom: 10px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      border: 1px solid $secondary;
+      margin-bottom: 10px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      border: 1px solid $secondary;
+      margin-bottom: 10px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      border: none;
+      margin-bottom: 0px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      border: none;
+      margin-bottom: 0px;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {
+      border: none;
+      margin-bottom: 0px;
+    }
+  }
+
   tr {
 
     td,

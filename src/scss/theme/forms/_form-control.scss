@@ -1,7 +1,5 @@
 .form-control,
 .form-select {
-  -webkit-appearance: auto;
-  appearance: auto;
   padding: $padding-xs;
   font-size: $fs-xs;
 
@@ -58,6 +56,16 @@
   &[type='file'] {
     padding: 0;
   }
+}
+
+.form-select {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffffff' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") !important;
+  background-repeat: no-repeat !important;
+  background-position-x: 97% !important;
+  background-position-y: 7px !important;
 }
 
 .search-bar.input-group {

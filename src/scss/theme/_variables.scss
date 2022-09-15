@@ -1,6 +1,7 @@
 // Variables
-$font-family-sec: 'Neue Haas Grotesk Display Pro', sans-serif;
 
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-sec: 'Neue Haas Grotesk Display Pro', sans-serif;
 
 // Shades of grey
 $white : #ffffff;
@@ -210,8 +211,6 @@ $container-padding-x: 1rem;
 // $font-awesome-5 : 'Font Awesome 5 Free';
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Montserrat', sans-serif;
-$font-family-sans-serif: 'Poppins', sans-serif;
 // stylelint-enable value-keyword-case
 $font-family-base: var(--bs-font-sans-serif);
 $font-family-code: var(--bs-font-monospace);
