@@ -152,9 +152,9 @@ gulp.task('minify:html', function () {
 
 gulp.task('minify:html:index', function () {
   return gulp.src([paths.dist.base + '*.html'])
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
+    // .pipe(htmlmin({
+    //   collapseWhitespace: true
+    // }))
     .pipe(fileinclude({
       prefix: '@@',
       basepath: './src/partials/',

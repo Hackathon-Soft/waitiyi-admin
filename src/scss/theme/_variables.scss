@@ -63,17 +63,6 @@ $min-contrast-ratio: 3;
 $color-contrast-dark : $dark;
 $color-contrast-light: $white;
 
-// fusv-disable
-$blue-100: tint-color($blue, 8);
-$blue-200: tint-color($blue, 6);
-$blue-300: tint-color($blue, 4);
-$blue-400: tint-color($blue, 2);
-$blue-500: $blue;
-$blue-600: shade-color($blue, 2);
-$blue-700: shade-color($blue, 4);
-$blue-800: shade-color($blue, 6);
-$blue-900: shade-color($blue, 8);
-
 // fusv-enable
 
 // Characters which are escaped by the escape-svg function
