@@ -118,7 +118,30 @@
   text-transform: uppercase;
 
   img {
-    height: 40px;
+    height: 27px;
+
+    // Extra Small devices (landscape phones, 376px and up)
+    @include media-breakpoint-up(xs) {
+      height: 30px;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @include media-breakpoint-up(sm) {
+      height: 30px;
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @include media-breakpoint-up(md) {
+      height: 34px;
+    }
+
+    // Large devices (desktops, 992px and up)
+    @include media-breakpoint-up(lg) {
+      height: 40px;
+    }
+
+    // X-Large devices (large desktops, 1200px and up)
+    @include media-breakpoint-up(xl) {}
   }
 }
 
@@ -176,6 +199,8 @@
     }
 
     .dropdown-menu-end {
+      right: 0px;
+
       &:before {
         right: 20px;
         left: auto;
@@ -289,7 +314,6 @@
     // top: 0;
     // right: 15px;
     z-index: 1050;
-    overflow-y: auto;
 
     .navbar-toggler {
       position: relative;
@@ -328,7 +352,6 @@
   .navbar-collapse.show {
     padding: 1.5rem;
     border-radius: $dropdown-border-radius;
-    background: $primary-gradient;
     animation: show-navbar-collapse .2s ease forwards;
     @include box-shadow(0 0 20px rgba(0, 0, 0, .1));
   }
