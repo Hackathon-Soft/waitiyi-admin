@@ -126,13 +126,13 @@ gulp.task('beautify:css', function () {
 });
 
 // Minify CSS
-gulp.task('minify:css', function () {
-  return gulp.src([
-    paths.dist.css + '/main.css'
-  ])
-    .pipe(cleanCss())
-    .pipe(gulp.dest(paths.dist.css))
-});
+// gulp.task('minify:css', function () {
+//   return gulp.src([
+//     paths.dist.css + '/main.css'
+//   ])
+//     .pipe(cleanCss())
+//     .pipe(gulp.dest(paths.dist.css))
+// });
 
 // Minify Html
 gulp.task('minify:html', function () {
@@ -272,7 +272,7 @@ gulp.task('copy:dev:vendor', function () {
 });
 
 gulp.task('build:dev', gulp.series('clean:dev', 'copy:dev:css', 'copy:dev:html', 'copy:dev:html:index', 'copy:dev:assets', 'beautify:css', 'copy:dev:vendor'));
-gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:html:index', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:html:index', 'copy:dist:vendor'));
+gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:html:index', 'copy:dist:assets', 'minify:html', 'minify:html:index', 'copy:dist:vendor'));
 
 // Default
 gulp.task('default', gulp.series('serve'));

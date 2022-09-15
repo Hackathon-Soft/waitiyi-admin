@@ -1,9 +1,6 @@
 // Variables
-//
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+$font-family-sec: 'Neue Haas Grotesk Display Pro', sans-serif;
 
-// Color system
 
 // Shades of grey
 $white : #ffffff;
@@ -17,7 +14,7 @@ $gray-600: #4B5563;
 $gray-700: #374151;
 $gray-800: #1F2937;
 $gray-900: #111827;
-$dark : $gray-800;
+$dark : #000;
 $black : $gray-900;
 
 // fusv-disable
@@ -32,121 +29,21 @@ $grays: (
   "800": $gray-800,
   "900": $gray-900
 );
-// fusv-enable
-
-// Generic colors
-$blue : #2361ce;
-$indigo : #4F46E5;
-$purple : #7C3AED;
-$pink : #EF4683;
-$red : #E11D48;
-$orange : #FBA918;
-$brown : #b9a084;
-$yellow : #f3c78e;
-$yellow-100 : #ffeed6;
-$yellow-200 : #f5dbb8;
-$green : #0EA980;
-$teal : #1E90FF;
-$cyan : #63b1bd;
-$soft-indigo: #f5e8ff;
-$soft-green : #2CA58D;
-
-// scss-docs-start colors-map
-// $colors: (
-//   "blue": $blue,
-//   "indigo": $indigo,
-//   "purple": $purple,
-//   "pink": $pink,
-//   "red": $red,
-//   "orange": $orange,
-//   "yellow": $yellow,
-//   "green": $green,
-//   "teal": $teal,
-//   "cyan": $cyan,
-//   "white": $white,
-//   "gray": $gray-600,
-//   "gray-dark": $gray-800
-// );
-// scss-docs-end colors-map
 
 // Color scheme
 $primary : #AA00AA;
 $secondary: #22043F;
 $tertiary : #31316A;
-
-$success: $green;
-$info : $blue;
-$warning: $yellow;
-$danger : $red;
 $gray : $gray-900;
 $light : $gray-400;
-$lighten: $gray-300;
-$soft : $gray-200;
 $dark : $dark;
-
-// Brands colors
-$facebook : #3b5999;
-$twitter : #1da1f2;
-$google : #DB4337;
-$instagram: #e4405f;
-$pinterest: #bd081c;
-$youtube : #cd201f;
-$slack : #3aaf85;
-$dribbble : #ea4c89;
-$github : #222222;
-$dropbox : #1E90FF;
-$twitch : #4B367C;
-$paypal : #ecb32c;
-$behance : #0057ff;
-$reddit : #E84422;
-
-// Brand colors
-$brand-colors: (
-  "facebook": $facebook,
-  "twitter": $twitter,
-  "google": $google,
-  "instagram": $instagram,
-  "pinterest": $pinterest,
-  "youtube": $youtube,
-  "slack": $slack,
-  "dribbble": $dribbble,
-  "dropbox": $dropbox,
-  "twitch": $twitch,
-  "paypal": $paypal,
-  "behance": $behance,
-  "reddit" : $reddit,
-  "github": $github
-);
 
 // Theme colors
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
-  "tertiary": $tertiary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
+  "black": #000,
   "white": $white,
-  "indigo": $indigo,
-  "purple": $purple,
-  "yellow-100": $yellow-100,
-  "yellow-200": $yellow-200,
-  "gray-50": $gray-50,
-  "gray-100": $gray-100,
-  "gray-200": $gray-200,
-  "gray-300": $gray-300,
-  "gray-400": $gray-400,
-  "gray-500": $gray-500,
-  "gray-600": $gray-600,
-  "gray-700": $gray-700,
-  "gray-800": $gray-800,
-  "gray-900": $gray-900
-);
-
-// Navbar colors
-$navbar-colors: (
-  "primary": $primary,
 );
 
 // Set a specific jump point for requesting color jumps
@@ -159,8 +56,7 @@ $container-margins-sm: 16px;
 $container-margins-md: 80px;
 $container-margins-lg: 103px;
 $container-margins-xl: 103px;
-// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
-// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+
 $min-contrast-ratio: 3;
 
 // Customize the light and dark text colors for use in our color contrast function.
@@ -321,11 +217,12 @@ $container-padding-x: 1rem;
 // Font, line-height, and color for body text, headings, and more.
 
 // font awesome
-$fontawesome-webfonts-path: '../vendor/font-awesome/webfonts';
-$font-awesome-5 : 'Font Awesome 5 Free';
+// $fontawesome-webfonts-path: '../vendor/font-awesome/webfonts';
+// $font-awesome-5 : 'Font Awesome 5 Free';
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: 'Avenir', sans-serif;
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-sans-serif: 'Poppins', sans-serif;
 // stylelint-enable value-keyword-case
 $font-family-base: var(--bs-font-sans-serif);
 $font-family-code: var(--bs-font-monospace);
