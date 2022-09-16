@@ -397,6 +397,10 @@
  }
 
  .btn-check-wrapper {
+   width: 100px;
+   justify-content: center;
+   align-items: center;
+
    .btn-check:checked+.btn-card {
      box-shadow: 0px 0px 3px $primary;
    }
