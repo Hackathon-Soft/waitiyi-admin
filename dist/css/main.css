@@ -12147,6 +12147,7 @@ textarea.form-control-lg {
     height: 40px; }
   .navbar .navbar-nav .btn-nav {
     color: #fff;
+    background: #8800CC;
     background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
     border-radius: 30px;
     height: 40px;
@@ -12156,6 +12157,7 @@ textarea.form-control-lg {
       margin-right: 10px; }
     .navbar .navbar-nav .btn-nav:hover, .navbar .navbar-nav .btn-nav:focus, .navbar .navbar-nav .btn-nav:active {
       color: #fff;
+      background: #8800CC;
       background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%);
       border-radius: 30px; }
 
@@ -12180,6 +12182,14 @@ textarea.form-control-lg {
   top: 100%; }
   .dropdown-menu span {
     width: 30px; }
+  .dropdown-menu.dropdown-primary {
+    background: #8800CC;
+    background: linear-gradient(293.49deg, #8800CC 3.14%, #9900BB 49.41%, #AA00AA 85.46%); }
+    .dropdown-menu.dropdown-primary .dropdown-item {
+      color: #fff; }
+      .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropdown-menu.dropdown-primary .dropdown-item:focus, .dropdown-menu.dropdown-primary .dropdown-item:active {
+        background: #9900BB;
+        background: linear-gradient(290deg, #600090 4%, #6a0082 46%, #670167 85%); }
 
 .navbar-transparent {
   background-color: transparent;
