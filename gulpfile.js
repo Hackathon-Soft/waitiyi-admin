@@ -61,7 +61,7 @@ gulp.task('scss', function () {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      overrideBrowserslist: ['> 1%']
+      overrideBrowserslist: ['> 7%']
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.temp.css))
@@ -181,7 +181,7 @@ gulp.task('copy:dist:css', function () {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      overrideBrowserslist: ['> 1%']
+      overrideBrowserslist: ['> 7%']
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.dist.css))
@@ -193,7 +193,7 @@ gulp.task('copy:dev:css', function () {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      overrideBrowserslist: ['> 1%']
+      overrideBrowserslist: ['> 7%']
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.dev.css))
