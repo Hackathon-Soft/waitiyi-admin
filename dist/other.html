@@ -311,31 +311,252 @@
     </header>
 
     <main>
-      <section class="vh-100 d-flex align-items-center justify-content-center">
-        <div class="container-fluid section-x-margins">
-          <div class="row align-items-center ">
-            <div class="col-24 col-lg-10 order-2 order-lg-1 text-center text-lg-left">
-              <h1 class="mt-5">Something has gone <span class="text-primary">seriously</span> wrong</h1>
-              <p class="lead my-4">It's always time for a coffee break. We should be back by the time you finish your
-                coffee.</p>
-              <a href="../push.html"
-                class="btn btn-gray-800 d-inline-flex align-items-center justify-content-center mb-4">
-                <svg class="icon icon-xs me-2" width="20" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
-                Back to homepage
-              </a>
-            </div>
-            <div
-              class="col-24 col-lg-14 order-1 order-lg-2 text-center d-flex align-items-center justify-content-center">
-              <img class="img-fluid w-75" src="../../assets/img/illustrations/500.svg" alt="500 Server Error">
-            </div>
+      <div class="row g-4">
+        <div class="col-7 d-flex align-items-stretch mb-4">
+          <div class="w-100 mb-4">
+            <div class="card charts border-0 mb-3 p-0">
+              <div class="card-outer-body">
+                <div class="card-header mb-0">
+                  <h6 class="h5 text-white fw-700 mb-2 mb-md-0">
+                    Earnings
+                  </h6>
+                </div>
+                <div class="card-body p-0">
+                  <div class="text-center">
+                    <p class="fw-700 text-white mb-1"> Total Earning </p>
+                    <h4 class="fw-700 text-white mb-3"> $140.00 </h4>
+
+                    <div class="badge text-bg-primary rounded-pill px-3 py-2">
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.66658 11.5L7.99992 5.5L11.3333 11.5L4.66658 11.5Z" fill="white" />
+                      </svg>
+                      4.5%
+                    </div>
+                    <!-- <br /><br /> -->
+                  </div>
+                </div>
+              </div>
+              <div class="ct-chart-filter-earning1 ct-major-twelfth"></div>
+            </div><!-- / END -->
           </div>
         </div>
-      </section>
+        <div class="col-7 d-flex align-items-stretch mb-4">
+          <div class="w-100 mb-4">
+            <div class="card charts card-style-2 border-0 mb-3">
+              <div class="card-header mb-0">
+                <div class="row d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="col-md-12">
+                    <h6 class="h5 text-white fw-700 mb-2 mb-md-0">
+                      Filter Earning
+                    </h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="d-flex justify-content-end">
+                      <select class="form-select card-select" aria-label="">
+                        <option selected>Last 7 days</option>
+                        <option value="1">Last 14 days</option>
+                        <option value="2">Last 21 days</option>
+                        <option value="3">Last 1 month</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <br /><br />
+                <div class="ct-chart-filter-earning ct-major-sixth"></div>
+              </div>
+            </div><!-- / END -->
+          </div>
+        </div>
+        <div class="col-10 d-flex align-items-stretch mb-4">
+          <div class="w-100 mb-4">
+            <div class="card charts card-style-2 border-0 mb-3 w-100">
+              <div class="card-header mb-0">
+                <div class="row d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="col-md-12">
+                    <h6 class="h5 text-white fw-700 mb-2 mb-md-0">
+                      Balance Overview
+                    </h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="d-flex justify-content-end">
+                      <span class="card-select-label">Sort by:</span>
+                      <select class="form-select card-select card-select-2" aria-label="">
+                        <option selected>Current Year</option>
+                        <option value="1">Last Year</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="row">
+                  <div class="col-8 border-end">
+                    <div class="small text-center">
+                      <b class="text-primary">$584k</b>
+                      <span class="text-white">Earn</span>
+                    </div><!-- /.small END -->
+                  </div><!-- /.col-md END -->
+                  <div class="col-8 border-end">
+                    <div class="small text-center">
+                      <b class="text-primary">$497k</b>
+                      <span class="text-white">Spent</span>
+                    </div>
+                  </div><!-- /.col-md END -->
+                  <div class="col-8">
+                    <div class="small text-center">
+                      <b class="text-primary">3.5%</b>
+                      <span class="text-white">
+                        <span class="d-none d-md-inline">Earning</span> Ratio
+                      </span>
+                    </div>
+                  </div><!-- /.col-md END -->
+                </div><!-- /.row END -->
+                <!-- <br /> --> <br />
+                <div class="ct-chart-filter-earning3 ct-minor-seventh"></div>
+                <div class="d-flex justify-content-center">
+                  <div class="me-3">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="10" height="10" rx="5" fill="#0AB39C" />
+                    </svg>
+                    Earning
+                  </div>
+                  <div>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="10" height="10" rx="5" fill="#F06548" />
+                    </svg>
+                    Spent
+                  </div>
+                </div><!-- /.d-flex justifty-content-center END -->
+              </div>
+            </div><!-- / END -->
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-7 mb-4">
+          <div class="mb-4">
+            <div class="card charts h-100 border-0 mb-3 p-0">
+              <div class="card-outer-body">
+                <div class="card-header mb-0">
+                  <h6 class="h5 text-white fw-700 mb-2 mb-md-0">
+                    Earnings
+                  </h6>
+                </div>
+                <div class="card-body p-0">
+                  <div class="text-center">
+                    <p class="fw-700 text-white mb-1"> Total Earning </p>
+                    <h4 class="fw-700 text-white mb-3"> $140.00 </h4>
+
+                    <div class="badge text-bg-primary rounded-pill px-3 py-2">
+                      <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.66658 11.5L7.99992 5.5L11.3333 11.5L4.66658 11.5Z" fill="white" />
+                      </svg>
+                      4.5%
+                    </div>
+                    <!-- <br /><br /> -->
+                  </div>
+                </div>
+              </div>
+              <div class="ct-chart-filter-earning1 ct-major-twelfth"></div>
+            </div><!-- / END -->
+          </div>
+        </div>
+        <div class="col-7 mb-4">
+          <div class="mb-4">
+            <div class="card charts h-100 card-style-2 border-0 mb-3">
+              <div class="card-header mb-0">
+                <div class="row d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="col-md-12">
+                    <h6 class="h5 text-white fw-700 mb-2 mb-md-0">
+                      Filter Earning
+                    </h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="d-flex justify-content-end">
+                      <select class="form-select card-select" aria-label="">
+                        <option selected>Last 7 days</option>
+                        <option value="1">Last 14 days</option>
+                        <option value="2">Last 21 days</option>
+                        <option value="3">Last 1 month</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <br /><br />
+                <div class="ct-chart-filter-earning ct-major-sixth"></div>
+              </div>
+            </div><!-- / END -->
+          </div>
+        </div>
+        <div class="col-10 mb-4">
+          <div class="mb-4">
+            <div class="card charts h-100 card-style-2 border-0 mb-3">
+              <div class="card-header mb-0">
+                <div class="row d-flex flex-wrap align-items-center justify-content-between">
+                  <div class="col-md-12">
+                    <h6 class="h5 text-white fw-700 mb-2 mb-md-0">
+                      Balance Overview
+                    </h6>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="d-flex justify-content-end">
+                      <span class="card-select-label">Sort by:</span>
+                      <select class="form-select card-select card-select-2" aria-label="">
+                        <option selected>Current Year</option>
+                        <option value="1">Last Year</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="row">
+                  <div class="col-8 border-end">
+                    <div class="small text-center">
+                      <b class="text-primary">$584k</b>
+                      <span class="text-white">Earn</span>
+                    </div><!-- /.small END -->
+                  </div><!-- /.col-md END -->
+                  <div class="col-8 border-end">
+                    <div class="small text-center">
+                      <b class="text-primary">$497k</b>
+                      <span class="text-white">Spent</span>
+                    </div>
+                  </div><!-- /.col-md END -->
+                  <div class="col-8">
+                    <div class="small text-center">
+                      <b class="text-primary">3.5%</b>
+                      <span class="text-white">
+                        <span class="d-none d-md-inline">Earning</span> Ratio
+                      </span>
+                    </div>
+                  </div><!-- /.col-md END -->
+                </div><!-- /.row END -->
+                <!-- <br /> --> <br />
+                <div class="ct-chart-filter-earning3 ct-minor-seventh"></div>
+                <div class="d-flex justify-content-center">
+                  <div class="me-3">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="10" height="10" rx="5" fill="#0AB39C" />
+                    </svg>
+                    Earning
+                  </div>
+                  <div>
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="10" height="10" rx="5" fill="#F06548" />
+                    </svg>
+                    Spent
+                  </div>
+                </div><!-- /.d-flex justifty-content-center END -->
+              </div>
+            </div><!-- / END -->
+          </div>
+        </div>
+      </div>
     </main>
 
     <link href="http://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
