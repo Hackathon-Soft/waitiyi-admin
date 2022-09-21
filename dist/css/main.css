@@ -13487,6 +13487,25 @@ h1, .h1,
         font-size: 34px;
         line-height: 36px; } }
 
+.charts-fixed-h {
+  max-height: 420px;
+  max-height: 420px; }
+  @media (min-width: 576px) {
+    .charts-fixed-h {
+      max-height: 420px; } }
+  @media (min-width: 768px) {
+    .charts-fixed-h {
+      max-height: 420px; } }
+  @media (min-width: 992px) {
+    .charts-fixed-h {
+      max-height: 420px; } }
+  @media (min-width: 1200px) {
+    .charts-fixed-h {
+      max-height: 420px; } }
+  @media (min-width: 1400px) {
+    .charts-fixed-h {
+      max-height: 420px; } }
+
 .chart-subscribers .ct-series-a .ct-line {
   stroke: #2FE9B6;
   stroke-width: 1px;
