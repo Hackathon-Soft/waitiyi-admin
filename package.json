@@ -8,21 +8,21 @@
     "bootstrap"
   ],
   "homepage": "",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/themesberg/pixel-bootstrap-ui-kit"
-  },
+  "browserslist": [
+    "> 0.1%",
+    "last 2 versions"
+  ],
   "bugs": {
     "email": "support@themesberg.com"
   },
   "license": "MIT License",
   "devDependencies": {
-    "browser-sync": "^2.27.4",
+    "browser-sync": "^2.27.10",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-cssbeautify": "^3.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssbeautify": "^3.0.1",
     "gulp-file-include": "^2.3.0",
     "gulp-header": "^2.0.9",
     "gulp-htmlmin": "^5.0.1",
