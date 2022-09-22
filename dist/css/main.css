@@ -14623,12 +14623,15 @@ h1, .h1,
   .card.main-hero {
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 146px 93px;
-    background-size: 146px 93px;
+    background-size: 176px 125px;
+    background-size: contain;
+    background-size: 176px 125px;
+    background-size: contain;
     background-position: bottom right; }
     @media (min-width: 576px) {
       .card.main-hero {
-        background-size: 146px 93px;
+        background-size: 176px 125px;
+        background-size: contain;
         background-position: bottom right; } }
     @media (min-width: 768px) {
       .card.main-hero {

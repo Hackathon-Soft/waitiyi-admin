@@ -38,17 +38,20 @@
    &.main-hero {
      background-repeat: no-repeat;
      background-position: bottom right;
-     background-size: 146px 93px;
+     background-size: 176px 125px;
+     background-size: contain;
 
      // Extra Small devices (landscape phones, 376px and up)
      @include media-breakpoint-up(xs) {
-       background-size: 146px 93px;
+       background-size: 176px 125px;
+       background-size: contain;
        background-position: bottom right;
      }
 
      // Small devices (landscape phones, 576px and up)
      @include media-breakpoint-up(sm) {
-       background-size: 146px 93px;
+       background-size: 176px 125px;
+       background-size: contain;
        background-position: bottom right;
      }
 
