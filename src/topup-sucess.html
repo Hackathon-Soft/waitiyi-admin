@@ -52,9 +52,17 @@
                 <p class="font-2 mb-4">
                   Amount of <b>100$</b> have been successfully added to your watiyi Balance.
                 </p>
-                <a href="" class="btn btn-primary px-4 px-md-5">
-                  <span class="px-5">Done</span><!-- /.px-5 END -->
-                </a>
+                <div>
+                  <button type="button" class="btn btn-outline-primary px-4 px-md-5 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#giftModal">
+                    <span class="px-5">Detail</span>
+                  </button>
+                </div>
+                <div>
+                  <a href="" class="btn btn-primary px-4 px-md-5">
+                    <span class="px-5">Done</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -65,6 +73,88 @@
     @@include('./_scripts.html', {
     "path": "."
     })
+
+    <!-- Modal -->
+    <div class="modal payment-details fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel"
+      data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <button type="button" class="btn-close2" data-bs-dismiss="modal" aria-label="Close">
+        <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26 25.9999L6 5.99988M26 5.99988L6 25.9999" stroke="white" stroke-width="3" stroke-linecap="round" />
+        </svg>
+
+      </button>
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="giftModalLabel">Payment Details</h5>
+          </div>
+          <div class="modal-body">
+            <div class="text-center inner-header">
+              <svg width="102" height="102" viewbox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.07" cx="51" cy="51" r="51" fill="#8B25DA" />
+                <ellipse cx="51.0006" cy="51.0001" rx="43.0667" ry="43.0667" fill="#8B25DA" />
+                <path d="M63.0887 41.9333L46.4664 58.5556L38.9109 51" stroke="white" stroke-width="4"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <p class="text-black mb-0">Payment Total</p>
+              <p class="text-black fw-900 h2">$100.00</p><!-- /.h2 END -->
+            </div><!-- /.text-center END -->
+            <ul class="list-group list-group-flush mb-0">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <span class="text-gray">Date</span>
+                  <b>12 May 2021</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <span class="text-gray">Details</span>
+                  <b>Watiyi Top Up</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <span class="text-gray">Reference num</span>
+                  <b>A06453826151</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <span class="text-gray">Account</span>
+                  <b>Waleed Khan</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <hr style="border: 1.2px dashed #8B25DA;" />
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <span class="text-gray">Total Payment</span>
+                  <b>$ 100.00</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <span class="text-gray">Watiyi Fee</span>
+                  <b>$ 0.00</b>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <span class="text-gray fw-bold">Total</span>
+                  <b class="text-primary fw-bold">$ 100.00</b>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+        </div>
+      </div>
+    </div>
 
   </body>
 

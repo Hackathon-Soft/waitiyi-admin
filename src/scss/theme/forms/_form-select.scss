@@ -1,7 +1,12 @@
 .form-select {
   padding-right: 50px !important;
   min-width: 65px;
-  background-image: none !important;
+
+  &:not(.custom) {
+    background-image: none !important;
+  }
+
+  &.custom {}
 
   .form-select-lg {
     padding: $form-select-padding-y (

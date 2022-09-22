@@ -111,7 +111,7 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item me-4">
-          <button type="button" class="nav-link btn-nav" data-bs-toggle="modal" data-bs-target="#giftModal">
+          <button type="button" class="nav-link btn-nav" data-bs-toggle="modal" data-bs-target="#shareModal">
             <!-- <img src="/assets/icons/gift.svg" alt="" class="svg" /> -->
             <svg width="33" height="33" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="25 21 33 32">
               <g filter="url(#filter0_d_59_1738)">
@@ -227,7 +227,7 @@
 
 
 <!-- Modal -->
-<div class="modal payment-details fade" id="giftModal" tabindex="-1" aria-labelledby="giftModalLabel"
+<div class="modal payment-details fade" id="shareModal" tabindex="-1" aria-labelledby="shareModalLabel"
   data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
   <button type="button" class="btn-close2" data-bs-dismiss="modal" aria-label="Close">
     <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,70 +238,121 @@
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="giftModalLabel">Payment Details</h5>
+        <h5 class="modal-title" id="shareModalLabel">Share and Earn</h5>
       </div>
       <div class="modal-body">
         <div class="text-center inner-header">
-          <svg width="102" height="102" viewbox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle opacity="0.07" cx="51" cy="51" r="51" fill="#8B25DA" />
-            <ellipse cx="51.0006" cy="51.0001" rx="43.0667" ry="43.0667" fill="#8B25DA" />
-            <path d="M63.0887 41.9333L46.4664 58.5556L38.9109 51" stroke="white" stroke-width="4" stroke-linecap="round"
-              stroke-linejoin="round" />
+          <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="44.0003" cy="44" rx="43.0667" ry="43.0667" fill="#8B25DA" />
+            <g clip-path="url(#clip0_468_105)">
+              <path
+                d="M54.9996 30.0001C54.2039 30.0001 53.4408 30.3162 52.8782 30.8788C52.3156 31.4414 51.9996 32.2045 51.9996 33.0001C51.9996 33.7958 52.3156 34.5589 52.8782 35.1215C53.4408 35.6841 54.2039 36.0001 54.9996 36.0001C55.7952 36.0001 56.5583 35.6841 57.1209 35.1215C57.6835 34.5589 57.9996 33.7958 57.9996 33.0001C57.9996 32.2045 57.6835 31.4414 57.1209 30.8788C56.5583 30.3162 55.7952 30.0001 54.9996 30.0001ZM49.9996 33.0001C49.9994 31.827 50.4118 30.6912 51.1645 29.7914C51.9172 28.8916 52.9624 28.2851 54.1171 28.078C55.2718 27.871 56.4626 28.0765 57.481 28.6587C58.4995 29.241 59.2808 30.1628 59.6883 31.2629C60.0957 32.363 60.1034 33.5713 59.7099 34.6765C59.3165 35.7817 58.5469 36.7133 57.536 37.3084C56.525 37.9035 55.3369 38.1242 54.1797 37.9318C53.0224 37.7395 51.9696 37.1463 51.2056 36.2561L37.7696 42.4961C38.0784 43.475 38.0784 44.5253 37.7696 45.5041L51.2056 51.7441C52.0132 50.8048 53.1409 50.1988 54.3699 50.0434C55.599 49.8881 56.842 50.1946 57.8579 50.9035C58.8739 51.6124 59.5905 52.6732 59.8689 53.8804C60.1473 55.0875 59.9676 56.3551 59.3647 57.4373C58.7618 58.5195 57.7787 59.3394 56.6057 59.7381C55.4328 60.1367 54.1536 60.0857 53.0161 59.595C51.8786 59.1042 50.9638 58.2087 50.449 57.0819C49.9342 55.9551 49.856 54.6773 50.2296 53.4961L36.7936 47.2561C36.1284 48.0313 35.2419 48.5841 34.2531 48.8403C33.2644 49.0965 32.2209 49.0437 31.263 48.6891C30.3052 48.3345 29.4789 47.695 28.8954 46.8567C28.3118 46.0184 27.999 45.0215 27.999 44.0001C27.999 42.9787 28.3118 41.9819 28.8954 41.1436C29.4789 40.3053 30.3052 39.6658 31.263 39.3112C32.2209 38.9566 33.2644 38.9038 34.2531 39.16C35.2419 39.4162 36.1284 39.969 36.7936 40.7441L50.2296 34.5041C50.0766 34.0175 49.999 33.5103 49.9996 33.0001ZM32.9996 41.0001C32.2039 41.0001 31.4408 41.3162 30.8782 41.8788C30.3156 42.4414 29.9996 43.2045 29.9996 44.0001C29.9996 44.7958 30.3156 45.5589 30.8782 46.1215C31.4408 46.6841 32.2039 47.0001 32.9996 47.0001C33.7952 47.0001 34.5583 46.6841 35.1209 46.1215C35.6835 45.5589 35.9996 44.7958 35.9996 44.0001C35.9996 43.2045 35.6835 42.4414 35.1209 41.8788C34.5583 41.3162 33.7952 41.0001 32.9996 41.0001ZM54.9996 52.0001C54.2039 52.0001 53.4408 52.3162 52.8782 52.8788C52.3156 53.4414 51.9996 54.2045 51.9996 55.0001C51.9996 55.7958 52.3156 56.5589 52.8782 57.1215C53.4408 57.6841 54.2039 58.0001 54.9996 58.0001C55.7952 58.0001 56.5583 57.6841 57.1209 57.1215C57.6835 56.5589 57.9996 55.7958 57.9996 55.0001C57.9996 54.2045 57.6835 53.4414 57.1209 52.8788C56.5583 52.3162 55.7952 52.0001 54.9996 52.0001Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_468_105">
+                <rect width="32" height="32" fill="white" transform="translate(28 28)" />
+              </clipPath>
+            </defs>
           </svg>
 
-          <p class="text-black mb-0">Payment Total</p>
-          <p class="text-black fw-900 h2">$100.00</p><!-- /.h2 END -->
+
+          <p class="text-black mb-0">Share and Earn</p>
+          <p class="text-black fw-900 h2">Share Link</p><!-- /.h2 END -->
         </div><!-- /.text-center END -->
-        <ul class="list-group list-group-flush mb-0">
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <span class="text-gray">Date</span>
-              <b>12 May 2021</b>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <span class="text-gray">Details</span>
-              <b>Watiyi Top Up</b>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <span class="text-gray">Reference num</span>
-              <b>A06453826151</b>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <span class="text-gray">Account</span>
-              <b>Waleed Khan</b>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <hr style="border: 1.2px dashed #8B25DA;" />
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <span class="text-gray">Total Payment</span>
-              <b>$ 100.00</b>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <span class="text-gray">Watiyi Fee</span>
-              <b>$ 0.00</b>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <span class="text-gray fw-bold">Total</span>
-              <b class="text-primary fw-bold">$ 100.00</b>
-            </div>
-          </li>
-        </ul>
+        <div class="form-group mb-4">
+          <div class="text-center">
+            <label class="form-label text-white mb-3 mb-md-4" for="plateform">
+              Select New Payment Platform
+            </label>
+          </div><!-- /.text-center END -->
+          <div class="row justify-content-center">
+            <div class="col-20">
+              <div class="row g-3">
+                <div class="col-md-8">
+                  <div class="d-flex justify-content-center">
+                    <div class="share-btn-wrapper">
+                      <input type="radio" class="btn-check" name="share-radio" id="play_store" autocomplete="off"
+                        checked />
+                      <label class="btn btn-card btn-outline-white" for="play_store">
+                        <img class="icon" src="/assets/img/icons/play_store.png" alt="" />
+                      </label>
+                      <label class="label font-2" for="play_store">Link Storage</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="d-flex justify-content-center">
+                    <div class="share-btn-wrapper">
+                      <input type="radio" class="btn-check" name="share-radio" id="copy" autocomplete="off" />
+                      <label class="btn btn-card btn-outline-white" for="copy">
+                        <img class="icon" src="/assets/img/icons/copy.png" alt="" />
+                      </label>
+                      <label class="label font-2" for="copy">Copy</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="d-flex justify-content-center">
+                    <div class="share-btn-wrapper">
+                      <input type="radio" class="btn-check" name="share-radio" id="Print" autocomplete="off" checked />
+                      <label class="btn btn-card btn-outline-white" for="Print">
+                        <img class="icon" src="/assets/img/icons/print.png" alt="" />
+                      </label>
+                      <label class="label font-2" for="Print">Print</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="d-flex justify-content-center">
+                    <div class="share-btn-wrapper">
+                      <input type="radio" class="btn-check" name="share-radio" id="Whatsapp" autocomplete="off" />
+                      <label class="btn btn-card btn-outline-white" for="Whatsapp">
+                        <img class="icon" src="/assets/img/icons/wp.png" alt="" />
+                      </label>
+                      <label class="label font-2" for="Whatsapp">Whatsapp</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="d-flex justify-content-center">
+                    <div class="share-btn-wrapper">
+                      <input type="radio" class="btn-check" name="share-radio" id="Messanger" autocomplete="off"
+                        checked />
+                      <label class="btn btn-card btn-outline-white" for="Messanger">
+                        <img class="icon" src="/assets/img/icons/fb.png" alt="" />
+                      </label>
+                      <label class="label font-2" for="Messanger">Messanger</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="d-flex justify-content-center">
+                    <div class="share-btn-wrapper">
+                      <input type="radio" class="btn-check" name="share-radio" id="Instagram" autocomplete="off" />
+                      <label class="btn btn-card btn-outline-white" for="Instagram">
+                        <img class="icon" src="/assets/img/icons/ig.png" alt="" />
+                      </label>
+                      <label class="label font-2" for="Instagram">Instagram</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <button type="button" class="btn btn-primary w-100 px-4 px-md-5 mb-3">
+                  <span class="px-5">Share</span>
+                </button>
+              </div>
+              <div>
+                <button type="button" class="btn btn-outline-primary w-100 px-4 px-md-5" data-bs-dismiss="modal">
+                  <span class="px-5">Cancel</span>
+                </button>
+              </div>
+            </div><!-- /.col-20 END -->
+          </div><!-- /.row END -->
+        </div>
       </div>
       <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div> -->
     </div>
