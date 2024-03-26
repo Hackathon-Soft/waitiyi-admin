@@ -1,4 +1,6 @@
-# Feedify
+# waitiyi
+
+waitiyi.surge.sh
 
 ## Quick start
 
@@ -35,9 +37,10 @@ gulp build:dev
 
 This will generate a folder `html&css` which will have unminified CSS, Html and Javascript.
 
-## Minified version
+![waitiyi](https://github.com/Hackathon-Soft/waitiyi-admin/assets/99708427/8e296a92-5694-4e15-b0fa-4dc713c7d1a2)
 
-If you'd like to compile the code and get a minified version of the HTML and CSS just run the following Gulp command:
+
+
 
 ```
 gulp build:dist
